@@ -1,0 +1,196 @@
+{
+    "position": "top",
+    "layer": "top",
+    "modules-right": [
+        "tray",
+        "idle_inhibitor",
+        "power-profiles-daemon",
+        "wireplumber",
+        "bluetooth",
+        "custom/cmenu",
+        "cpu",
+        "niri/workspaces",
+        "custom/pmenu"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-left": [
+        "wlr/taskbar",
+        "mpris",
+        "niri/window"
+    ],
+    "clock": {
+        "format": "{:%B %d, %Y %H:%M} ",
+        "format-alt": "{:%A, %B %d, %Y (%R)} ",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "cpu": {
+        "interval": 5,
+        "format": "{}% ",
+        "max-length": 10
+    },
+    "bluetooth": {
+        "format": "",
+        "format-connected": " {device_alias}",
+        "format-disabled": " disabled",
+        "format-off": " off",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+        "tooltip-format": "{controller_alias}\t{controller_address}\t{status}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
+    "mpris": {
+        "name": "mpris",
+        "format": "{player_icon} {artist} - {title} |",
+        "interval": 1,
+        "title-len": 10,
+        "artist-len": 15,
+        "position-len": 15,
+        "length-len": 15,
+        "format-paused": "{status_icon}  {artist} - {title} - {position}/{length} | ",
+        "player-icons": {
+            "default": ""
+        },
+        "status-icons": {
+            "paused": ""
+        },
+        "ignored-players": [
+            "firefox",
+            "plasma-browser-integration"
+        ]
+    },
+    // "hyprland/workspaces": {
+    //     "format": "{icon}",
+    //     "format-icons": {
+    //         "active": "",
+    //         "default": ""
+    //     },
+    //     "persistent-workspaces": {
+    //         "*": [
+    //             1,
+    //             2,
+    //             3,
+    //             4,
+    //             5,
+    //             6,
+    //             7,
+    //             8
+    //         ] // workspace 1 shown on DP-3
+    //     },
+    //     "active-only": true
+    // },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": [
+                1,
+                2,
+                3,
+                4
+            ] // workspace 1 shown on DP-3
+        },
+        "ignore-workspaces": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "persistent-only": true
+    },
+    "niri/window": {
+        "format": "{}",
+        "max-length": 25,
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "$1",
+            "(.*) - fish": "> [$1]"
+        },
+        "separate-outputs": true
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+    "tray": {
+        "icon-size": 17,
+        "spacing": 10
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "max-volume": 100,
+        "scroll-step": 1,
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "custom/pmenu": {
+        "on-click": "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh",
+        "format": ""
+    },
+    "custom/cmenu": {
+        "on-click": "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh",
+        "format": ""
+    }
+}

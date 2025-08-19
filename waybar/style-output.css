@@ -1,0 +1,189 @@
+* {
+  all: unset;
+  font-size: 1.07em;
+  color: #dee6ff;
+  padding: 0;
+}
+
+.modules-left {
+  padding: 0.35rem;
+  margin: 7 0 0 7;
+  border-radius: 0.8rem;
+  background: rgba(32, 35, 55, 0.6);
+}
+
+.modules-center {
+  padding: 0.35rem;
+  margin: 7 0 0 0;
+  border-radius: 0.8rem;
+  background: rgba(32, 35, 55, 0.6);
+}
+
+.modules-right {
+  padding: 0.35rem;
+  margin: 7 7 0 0;
+  border-radius: 0.8rem;
+  background: rgba(32, 35, 55, 0.6);
+}
+
+tooltip {
+  background: rgba(32, 35, 55, 0.8);
+  border-radius: 0.8rem;
+  color: #dee6ff;
+  padding: 0.55rem;
+}
+
+#taskbar button {
+  padding: 0.1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#clock,
+#custom-pacman,
+#custom-notification,
+#bluetooth,
+#network,
+#battery,
+#cpu,
+#memory,
+#custom-pmenu,
+#custom-cmenu,
+#wireplumber,
+#tray,
+#window,
+#submap,
+#taskbar,
+#temperature,
+#idle_inhibitor,
+#mpris,
+#power-profiles-daemon {
+  transition: all 0.3s ease;
+  padding: 0.3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#clock:hover,
+#custom-pacman:hover,
+#custom-notification:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#wireplumber:hover,
+#custom-cmenu:hover,
+#custom-pmenu:hover,
+#workspaces button:hover,
+#taskbar button:hover,
+#power-profiles-daemon:hover {
+  color: #a3b4ff;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+#tray menu {
+  background: rgba(32, 35, 55, 0.8);
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+}
+
+#window {
+  font-size: 1.02em;
+}
+
+#window * {
+  font-size: 1.02em;
+}
+
+#mpris {
+  font-size: 1.02em;
+}
+
+#tray button {
+  padding: 0;
+  color: #dee6ff;
+}
+
+#custom-notification {
+  transition: all 0.3s ease;
+  color: #dee6ff;
+}
+
+#taskbar button {
+  padding: 0;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #dee6ff;
+}
+
+#workspaces button {
+  padding: 0;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: #dee6ff;
+}
+
+#workspaces button.active {
+  color: #dee6ff;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#workspaces button.empty {
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.empty.active {
+  color: #dee6ff;
+  border: none;
+}
+
+#battery.charging {
+  color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+  color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#group-expand {
+  transition: all 0.3s ease;
+}
+
+#custom-expand {
+  color: rgba(222, 230, 255, 0.6);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+#custom-expand:hover {
+  color: rgba(255, 255, 255, 0.2);
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+#cpu,
+#memory,
+#temperature {
+  transition: all 0.3s ease;
+  color: #dee6ff;
+}
+
+#power-profiles-daemon {
+  padding-left: 0.9rem;
+}
+
+/*# sourceMappingURL=style-output.css.map */
