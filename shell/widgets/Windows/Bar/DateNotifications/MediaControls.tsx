@@ -28,7 +28,7 @@ export default function MediaControls() {
                                     <With value={artPath}>
                                         {(value) => value ?
                                             <image cssName={"media-cover-art"} file={value} pixelSize={60} /> :
-                                            <image cssName={"media-cover-art"} iconName="applications-multimedia-symbolic" pixelSize={70} />
+                                            <image cssName={"media-cover-art"} iconName="applications-multimedia-symbolic" pixelSize={60} />
                                         }
                                     </With>
                                 </box>

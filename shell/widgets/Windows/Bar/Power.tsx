@@ -23,7 +23,7 @@ export default function Power() {
                 iconName={icon}
             />
             <With value={charge}>
-                {(value) => <label label={ " " + (value * 100) + "%"} />}
+                {(value) => <label label={ " " + Math.round((value * 100)) + "%"} />}
             </With>
         </box>
     )
