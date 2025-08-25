@@ -298,7 +298,7 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "flatpak run org.telegram.desktop -startintray"
 // spawn-at-startup "flatpak run com.discordapp.Discord --start-minimized"
 // spawn-at-startup "flatpak run org.signal.Signal"
-spawn-at-startup "/home/human/niriconfig/shell/start.sh"
+spawn-at-startup "bash /home/human/niriconfig/shell/start.sh"
 spawn-at-startup "/home/human/.bash_profile"
 spawn-at-startup "hyprpaper"
 spawn-at-startup "kdeconnect-indicator"
@@ -373,12 +373,12 @@ binds {
     Mod+B hotkey-overlay-title="Run browser" { spawn "firefox"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn "hyprpicker"; }
 
-    Mod+space hotkey-overlay-title="Find an Application using rofi drun" { spawn "/home/human/niriconfig/rofi/start-drun.sh"; }
+    Mod+space hotkey-overlay-title="Run rofi drun" { spawn "bash" "/home/human/niriconfig/rofi/start-drun.sh"; }
     Mod+Escape hotkey-overlay-title="Run calc menu" { spawn "gnome-system-monitor"; }
-    Mod+Shift+W hotkey-overlay-title="ags restart" {spawn "/home/human/niriconfig/shell/start.sh"; }
-    Mod+M hotkey-overlay-title="Run power menu" { spawn "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh"; }
-    Mod+V hotkey-overlay-title="Run clipboard menu" { spawn "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh"; }
-    Mod+X hotkey-overlay-title="Run calc menu" { spawn "/home/human/niriconfig/rofi/calculator/start-calcmenu.sh"; }
+    Mod+Shift+W hotkey-overlay-title="ags restart" {spawn "bash" "/home/human/niriconfig/shell/start.sh"; }
+    Mod+M hotkey-overlay-title="Run power menu" { spawn "bash" "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh"; }
+    Mod+V hotkey-overlay-title="Run clipboard menu" { spawn "bash" "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh"; }
+    Mod+X hotkey-overlay-title="Run calc menu" { spawn "bash" "/home/human/niriconfig/rofi/calculator/start-calcmenu.sh"; }
     
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -391,7 +391,7 @@ binds {
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "/home/human/niriconfig/volumelimit.sh"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "bash" "/home/human/niriconfig/volumelimit.sh"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }

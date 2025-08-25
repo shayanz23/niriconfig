@@ -17,7 +17,7 @@ export default function QuickSettings() {
                     <button iconName={"screenshooter-symbolic"} onClicked={() => execAsync("niri msg action screenshot")}></button>
                     <button iconName={"settings-symbolic"}></button>
                     <button iconName={"padlock2-symbolic"} onClicked={() => execAsync("hyprlock")}></button>
-                    <button iconName={"turn-off-symbolic"} onClicked={() => execAsync("/home/human/niriconfig/rofi/powermenu/run-power-menu.sh")}></button>
+                    <button iconName={"turn-off-symbolic"} onClicked={() => execAsync("bash /home/human/niriconfig/rofi/powermenu/run-power-menu.sh")}></button>
                 </box>
             </box>
             <Volume></Volume>

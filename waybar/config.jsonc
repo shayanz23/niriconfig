@@ -186,11 +186,11 @@
         }
     },
     "custom/pmenu": {
-        "on-click": "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh",
+        "on-click": "bash /home/human/niriconfig/rofi/powermenu/run-power-menu.sh",
         "format": ""
     },
     "custom/cmenu": {
-        "on-click": "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh",
+        "on-click": "bash /home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh",
         "format": ""
     }
 }
