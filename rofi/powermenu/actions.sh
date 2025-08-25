@@ -1,3 +1,5 @@
+#!/run/current-system/sw/bin/bash
+
 read foo
 
 echo $foo
