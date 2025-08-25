@@ -304,10 +304,10 @@ window-rule {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "xwayland-satellite"
 // spawn-at-startup "steam -silent"
-spawn-at-startup "flatpak run org.telegram.desktop -startintray"
 // spawn-at-startup "flatpak run com.discordapp.Discord --start-minimized"
 // spawn-at-startup "flatpak run org.signal.Signal"
 spawn-at-startup "bash" "/home/human/niriconfig/shell/start.sh"
+spawn-at-startup "flatpak" "run org.telegram.desktop -startintray"
 spawn-at-startup "/home/human/.bash_profile"
 spawn-at-startup "hyprpaper"
 spawn-at-startup "kdeconnect-indicator"
@@ -316,6 +316,7 @@ spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store" "#" "S
 // spawn-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
 spawn-at-startup "heroic"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "bash" "/home/human/niriconfig/brightness/restore-brightness.sh"
 
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.

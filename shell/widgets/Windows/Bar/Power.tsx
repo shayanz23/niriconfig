@@ -23,7 +23,7 @@ export default function Power() {
                 iconName={icon}
             />
             <With value={charge}>
-                {(value) => <label label={ " " + value + "%"} />}
+                {(value) => <label label={ " " + (value * 100) + "%"} />}
             </With>
         </box>
     )
