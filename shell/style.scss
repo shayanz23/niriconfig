@@ -1,0 +1,147 @@
+// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
+
+
+$fg-color: #{"@theme_fg_color"};
+$bg-color: #{"@theme_bg_color"};
+$popover-btn-bg: rgb(71, 71, 71);
+$standard-padding: 0.8rem;
+
+* {
+    font-size: 1.15rem;
+    font-family: Adwaita Sans;
+}
+
+button {
+    background: transparent;
+    border-radius: 1rem;
+    padding: 0.35rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+
+}
+
+button:hover {
+    background: $bg-color;
+}
+
+
+
+right-menu-button {
+    border-radius: 0;
+
+    image {
+        color: $fg-color;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+    }
+}
+
+right-menu-box {
+    border-radius: 0;
+}
+
+
+window.Bar {
+    background: transparent;
+    color: $fg-color;
+    font-weight: bold;
+
+    >centerbox {
+        background: black;
+
+
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+}
+
+.root-gobject {}
+
+fancy-day {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Adwaita Sans;
+    font-weight: bold;
+}
+
+fancy-date {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    padding-bottom: $standard-padding;
+    font-weight: bold;
+}
+
+calendar {
+    background: transparent;
+    border-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+date-weather {
+    padding: $standard-padding;
+}
+
+mpris-notifs-box {
+    padding: $standard-padding;
+    min-width: 20rem
+}
+
+quick-settings-box {
+    padding: $standard-padding;
+    padding-right: $standard-padding - 0.4rem;
+    ;
+
+    button {
+        background: rgba(255, 255, 255, 0.115);
+        margin: 0.4rem;
+        border-radius: 22rem;
+        padding: 0.55rem;
+    }
+
+    volume-button {
+        background: rgba(255, 255, 255, 0.115);
+        border-radius: 22rem;
+        padding: 0.3rem;
+        margin: 0rem;
+    }
+
+    .menu-slider {
+        padding-left: 1rem;
+    }
+}
+
+quick-actions-box {
+    margin-right: 0;
+}
+
+media-title-artist-box {
+    padding-left: 0.5rem;
+}
+
+media-title {
+    font-weight: bold;
+}
+
+media-player-box {
+    background: rgba(255, 255, 255, 0.115);
+    padding: 0.9rem;
+    margin-bottom: 0.9rem;
+    border-radius: 1rem;
+
+    button {
+        border-radius: 22rem;
+        padding: 0.55rem;
+        min-width: 1.5rem;
+    }
+
+    min-width: 23rem;
+}
+
+media-player-box:hover {
+    background: rgba(255, 255, 255, 0.145);
+}
+
+media-player-box-box {
+    padding-top: 0.5rem;
+}

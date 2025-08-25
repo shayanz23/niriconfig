@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ags": "*",
+    "gnim": "^1.5.2"
+  }
+}
