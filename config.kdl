@@ -204,7 +204,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7fc8ff"
+        active-color "#c57fffff"
 
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
@@ -293,7 +293,7 @@ layout {
 }
 
 window-rule {
-    open-maximized true
+    open-maximized false
 }
 
 // Add lines like this to spawn processes at startup.
@@ -307,8 +307,9 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "flatpak run org.telegram.desktop -startintray"
 // spawn-at-startup "flatpak run com.discordapp.Discord --start-minimized"
 // spawn-at-startup "flatpak run org.signal.Signal"
-spawn-at-startup "/home/human/niriconfig/waybar/startwaybar.sh"
+spawn-at-startup "bash /home/human/niriconfig/shell/start.sh"
 spawn-at-startup "/home/human/.bash_profile"
+spawn-at-startup "hyprpaper"
 spawn-at-startup "kdeconnect-indicator"
 spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store" "#" "Stores" "only" "text" "data"
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store" "#" "Stores" "only" "image" "data"
@@ -379,12 +380,14 @@ binds {
     Mod+A hotkey-overlay-title="Open file manager" { spawn "thunar"; }
     Mod+C hotkey-overlay-title="Run code" { spawn "code"; }
     Mod+B hotkey-overlay-title="Run browser" { spawn "firefox"; }
+    Mod+P hotkey-overlay-title="Run hyprpicker" { spawn "hyprpicker"; }
 
-    Mod+space hotkey-overlay-title="Find an Application using rofi drun" { spawn "/home/human/niriconfig/rofi/start-drun.sh"; }
-    Mod+Shift+W hotkey-overlay-title="waybar restart" {spawn "/home/human/niriconfig/waybar/startwaybar.sh"; }
-    Mod+M hotkey-overlay-title="Run power menu" { spawn "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh"; }
-    Mod+V hotkey-overlay-title="Run clipboard menu" { spawn "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh"; }
-    Mod+X hotkey-overlay-title="Run calc menu" { spawn "/home/human/niriconfig/rofi/calculator/start-calcmenu.sh"; }
+    Mod+space hotkey-overlay-title="Run rofi drun" { spawn "bash" "/home/human/niriconfig/rofi/start-drun.sh"; }
+    Mod+Escape hotkey-overlay-title="Run calc menu" { spawn "gnome-system-monitor"; }
+    Mod+Shift+W hotkey-overlay-title="ags restart" {spawn "bash" "/home/human/niriconfig/shell/start.sh"; }
+    Mod+M hotkey-overlay-title="Run power menu" { spawn "bash" "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh"; }
+    Mod+V hotkey-overlay-title="Run clipboard menu" { spawn "bash" "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh"; }
+    Mod+X hotkey-overlay-title="Run calc menu" { spawn "bash" "/home/human/niriconfig/rofi/calculator/start-calcmenu.sh"; }
     
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -397,8 +400,8 @@ binds {
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "/home/human/niriconfig/volumelimit.sh"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.01-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "bash" "/home/human/niriconfig/volumelimit.sh"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
@@ -413,8 +416,8 @@ binds {
     Mod+Q { close-window; }
 
     Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+    Mod+Down  { focus-workspace-down; }
+    Mod+Up    { focus-workspace-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
@@ -621,7 +624,7 @@ binds {
     //
     // The allow-inhibiting=false property can be applied to other binds as well,
     // which ensures niri always processes them, even when an inhibitor is active.
-    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    // Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E { quit; }
