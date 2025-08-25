@@ -135,8 +135,14 @@ media-player-box {
         min-width: 1.5rem;
     }
 
+    media-artist {
+        font-size: 1.08rem;
+    }
+
     min-width: 23rem;
 }
+
+
 
 media-player-box:hover {
     background: rgba(255, 255, 255, 0.145);
