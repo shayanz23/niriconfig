@@ -11,7 +11,7 @@ export default function MediaControls() {
 
 
     return (
-        <box>
+        <box orientation={Gtk.Orientation.VERTICAL}>
             <For each={players}>
                 {player => {
                     const title = createBinding(player, "title")
