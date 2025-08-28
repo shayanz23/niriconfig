@@ -12,7 +12,7 @@ if [ -f /etc/os-release ]; then
     . /etc/os-release
     OS=$NAME
     if [ "$OS" = "NixOS" ]; then
-        nix shell github:aylur/ags#agsFull --extra-experimental-features nix-command --extra-experimental-features flakes --command ags run /home/human/niriconfig/shell/app.ts
+        my-shell
     else
         ags run /home/human/niriconfig/shell/app.ts
     fi
