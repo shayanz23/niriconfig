@@ -94,21 +94,24 @@ quick-settings-box {
 
     button {
         background: rgba(255, 255, 255, 0.115);
-        margin: 0.4rem;
         border-radius: 22rem;
         padding: 0.55rem;
     }
 
-    volume-button {
-        background: rgba(255, 255, 255, 0.115);
-        border-radius: 22rem;
-        padding: 0.3rem;
-        margin: 0rem;
+    quick-actions-battery-box {
+        button {
+            margin: 0.4rem;
+        }
     }
 
-    .menu-slider {
-        padding-left: 1rem;
+    volume-box {
+        padding-top: 0.7rem;
     }
+
+    brightness-box {
+        padding-top: 0.7rem;
+    }
+
 }
 
 quick-actions-box {

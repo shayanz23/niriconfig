@@ -11,8 +11,10 @@ export default function Volume() {
 
     return (
         <box cssName={"volume-box"}>
-            <button cssClasses={["volume-button"]} onClicked={() => execAsync("pavucontrol")}><image iconName={volumeIcon} /></button>
-            <slider cssClasses={["menu-slider"]} widthRequest={295} value={volume} onValueChanged={(self) => {
+            <button cssClasses={["volume-button"]} onClicked={() => execAsync("pavucontrol")}>
+                <image iconName={volumeIcon} />
+                </button>
+            <slider cssClasses={["volume-slider"]} widthRequest={295} value={volume} onValueChanged={(self) => {
                 default_speaker.get().set_volume(self.value);
             }} />
         </box>
