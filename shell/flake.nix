@@ -19,7 +19,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in {
     packages.${system}.default = pkgs.stdenv.mkDerivation { 
-      pname = "my-shell";
+      pname = "my-gnome-shell";
 
       version = "0.1.0";
 
@@ -59,8 +59,8 @@
 
       installPhase = ''
         mkdir -p $out/bin
-        ags bundle app.ts $out/bin/my-shell
-        chmod +x $out/bin/my-shell
+        ags bundle app.ts $out/bin/my-gnome-shell
+        chmod +x $out/bin/my-gnome-shell
       '';
 
       preFixup = ''
