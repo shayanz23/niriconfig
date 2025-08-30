@@ -23,7 +23,6 @@ export default function Brightness() {
                         </button>
                         <slider cssClasses={["menu-slider"]} widthRequest={295} value={Number(value)/255} onValueChanged={(self) => {
                             execAsync(`brightnessctl s ${self.value*255}`)
-                            console.log(self.value*255)
                         }} />
                     </box>
                 }
