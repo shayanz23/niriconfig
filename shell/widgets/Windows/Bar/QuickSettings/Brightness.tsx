@@ -11,7 +11,7 @@ export default function Brightness() {
     } catch (error) {
         exists = false
     }
-    const brightness = createPoll("", 500, "brightnessctl g")
+    const brightness = createPoll("", 1000, "brightnessctl g")
 
     return (
         <box>
