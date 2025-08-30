@@ -7,7 +7,7 @@ import Wp from "gi://AstalWp"
 export default function Brightness() {
     let exists = true
     try {
-        exec("bash -c 'brightnessctl -l | grep backlight'")
+        exec("bash -c 'brightnessctl -l | grep leds'")
     } catch (error) {
         exists = false
     }
