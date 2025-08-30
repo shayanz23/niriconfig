@@ -8,5 +8,5 @@ a="${a//[$'\t\r\n ']}"
 echo $a
 
 if (( $(echo "$a < 0.975" | bc -l) )); then
-    wpctl set-volume @DEFAULT_AUDIO_SINK@ "5%+"
+    swayosd-client --output-volume 5
 fi

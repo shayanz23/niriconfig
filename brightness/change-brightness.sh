@@ -2,6 +2,6 @@
 
 amount=$1
 
-echo $(brightnessctl set $amount)
+echo $(swayosd-client --brightness $amount)
 
 brightnessctl get | tee /home/human/niriconfig/brightness/brightness-level

@@ -315,6 +315,8 @@ spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store" "#" "St
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store" "#" "Stores" "only" "image" "data"
 // spawn-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
 spawn-at-startup "heroic"
+spawn-at-startup "swayosd-server"
+spawn-at-startup "swayosd-libinput-backend"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "bash" "/home/human/niriconfig/brightness/restore-brightness.sh"
 
@@ -402,12 +404,12 @@ binds {
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
     XF86AudioRaiseVolume allow-when-locked=true { spawn "bash" "/home/human/niriconfig/volumelimit.sh"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "-5"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
-    XF86MonBrightnessUp     allow-when-locked=true { spawn "/home/human/niriconfig/brightness/change-brightness.sh" "+25"; }
-    XF86MonBrightnessDown   allow-when-locked=true { spawn "/home/human/niriconfig/brightness/change-brightness.sh" "25-"; }
+    XF86MonBrightnessUp     allow-when-locked=true { spawn "/home/human/niriconfig/brightness/change-brightness.sh" "+5"; }
+    XF86MonBrightnessDown   allow-when-locked=true { spawn "/home/human/niriconfig/brightness/change-brightness.sh" "-5"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
