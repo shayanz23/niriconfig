@@ -11,11 +11,12 @@ export default function Brightness() {
         MAX = Number(exec("brightnessctl m"))
         exec("bash -c 'brightnessctl -l | grep leds'")
     } catch (error) {
+        console.log(error)
         exists = false
     }
     const brightness = createPoll("", 5000, "brightnessctl g")
 
-    if (exists) {
+    if (!exists) {
         return [
             <box/>
         ]
