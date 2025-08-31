@@ -31,6 +31,7 @@ export default function DateNotifications() {
                 }} onNextMonth={cal => {
                     const today = GLib.DateTime.new_now_local()
                     cal.month = today.get_month() - 1
+                    cal.day = today.get_day_of_month()
                 }} onPrevMonth={cal => {
                     const today = GLib.DateTime.new_now_local()
                     cal.month = today.get_month() - 1

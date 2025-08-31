@@ -1,5 +1,4 @@
 import { createBinding, With } from "ags"
-import { Gtk } from "ags/gtk4"
 import AstalBattery from "gi://AstalBattery"
 
 export default function Battery() {
