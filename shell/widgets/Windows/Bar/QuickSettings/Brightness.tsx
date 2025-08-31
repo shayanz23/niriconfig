@@ -2,25 +2,27 @@
 import { createBinding, With } from "ags"
 import { exec, execAsync } from "ags/process"
 import { createPoll } from "ags/time"
-import Wp from "gi://AstalWp"
 
 export default function Brightness() {
     let MAX = 0
     let exists = true
     try {
         MAX = Number(exec("brightnessctl m"))
-        exec("bash -c 'brightnessctl -l | grep leds'")
+        exec("bash -c 'brightnessctl -l | grep backlight'")
     } catch (error) {
         console.log(error)
         exists = false
     }
-    const brightness = createPoll("", 5000, "brightnessctl g")
+
+
 
     if (!exists) {
         return [
             <box/>
         ]
     }    
+
+    const brightness = createPoll("", 5000, "brightnessctl g")
 
     return (
         <box>
