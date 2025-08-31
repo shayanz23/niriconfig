@@ -31,7 +31,7 @@
         ags.packages.${system}.default
       ];
 
-          buildInputs = with pkgs;
+      buildInputs = with pkgs;
       [
         glib
         libadwaita
