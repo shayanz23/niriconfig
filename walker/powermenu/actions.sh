@@ -1,11 +1,11 @@
-#!/run/current-system/sw/bin/bash
+#!/bin/bash
 
 read foo
 
 echo $foo
 
 if [ "$foo" = "suspend" ]; then
-    hyprlock & sleep 2 && systemctl suspend 
+    systemctl suspend 
 elif [ "$foo" = "shutdown" ]; then
     shutdown now
 elif [ "$foo" = "logout" ]; then

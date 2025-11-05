@@ -2,33 +2,32 @@
     "position": "top",
     "layer": "top",
     "modules-right": [
-        "tray",
         "idle_inhibitor",
+        "tray",
         "power-profiles-daemon",
         "wireplumber",
+        "network",
         "bluetooth",
         "custom/cmenu",
-        "cpu",
-        "niri/workspaces",
-        "custom/pmenu"
+        "battery"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-left": [
+        "niri/workspaces",
         "wlr/taskbar",
-        "mpris",
-        "niri/window"
+        "mpris"
     ],
     "clock": {
-        "format": "{:%B %d, %Y %H:%M} ",
-        "format-alt": "{:%A, %B %d, %Y (%R)} ",
+        "format": "{:%B %d, %Y %H:%M}",
+        "format-alt": "{:%A, %B %d, %Y (%R)}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
-            "mode": "year",
+            "mode": "month",
             "mode-mon-col": 3,
-            "weeks-pos": "right",
-            "on-scroll": 1,
+            "weeks-pos": "left",
+            "on-scroll": 0,
             "format": {
                 "months": "<span color='#ffead3'><b>{}</b></span>",
                 "days": "<span color='#ecc6d9'><b>{}</b></span>",
@@ -45,18 +44,12 @@
             "on-scroll-down": "shift_down"
         }
     },
-    "cpu": {
-        "interval": 5,
-        "format": "{}% ",
-        "max-length": 10
-    },
     "bluetooth": {
         "format": "",
         "format-connected": " {device_alias}",
         "format-disabled": " disabled",
         "format-off": " off",
         "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
         "tooltip-format": "{controller_alias}\t{controller_address}\t{status}\n\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -65,7 +58,7 @@
     "mpris": {
         "name": "mpris",
         "format": "{player_icon} {artist} - {title} |",
-        "interval": 1,
+        "interval": 5,
         "title-len": 10,
         "artist-len": 15,
         "position-len": 15,
@@ -82,47 +75,12 @@
             "plasma-browser-integration"
         ]
     },
-    // "hyprland/workspaces": {
-    //     "format": "{icon}",
-    //     "format-icons": {
-    //         "active": "",
-    //         "default": ""
-    //     },
-    //     "persistent-workspaces": {
-    //         "*": [
-    //             1,
-    //             2,
-    //             3,
-    //             4,
-    //             5,
-    //             6,
-    //             7,
-    //             8
-    //         ] // workspace 1 shown on DP-3
-    //     },
-    //     "active-only": true
-    // },
     "niri/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "active": "",
             "default": ""
-        },
-        "persistent-workspaces": {
-            "*": [
-                1,
-                2,
-                3,
-                4
-            ] // workspace 1 shown on DP-3
-        },
-        "ignore-workspaces": [
-            5,
-            6,
-            7,
-            8
-        ],
-        "persistent-only": true
+        }
     },
     "niri/window": {
         "format": "{}",
@@ -186,11 +144,35 @@
         }
     },
     "custom/pmenu": {
-        "on-click": "bash /home/human/niriconfig/rofi/powermenu/run-power-menu.sh",
+        "on-click": "bash /home/frame/niriconfig/rofi/powermenu/run-power-menu.sh",
         "format": ""
     },
     "custom/cmenu": {
-        "on-click": "bash /home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh",
+        "on-click": "bash /home/frame/niriconfig/rofi/clipmenu/start-clipmenu.sh",
         "format": ""
-    }
+    },
+      
+    "network": {
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
+  }
 }

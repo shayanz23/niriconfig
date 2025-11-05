@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Weather",
+        "type": "weather",
+        "args": {
+            "location": "Coquitlam",
+            "update_interval": 60
+        },
+        "actions": [
+            {
+                "name": "Show in Web",
+                "exec": "https://www.wttr.in/coquitlam",
+                "icon": "sherlock-link",
+                "method": "web_launcher"
+            }
+        ],
+        "priority": 1,
+        "home": "OnlyHome",
+        "async": true,
+        "shortcut": false,
+        "spawn_focus": false
+    },
+    {
+        "name": "Bookmarks",
+        "type": "bookmarks",
+        "args": {
+            "icon": "sherlock-bookmark",
+            "icon_class": "reactive"
+        },
+        "priority": 3,
+        "home": "Search"
+    },
+    {
+        "name": "App Launcher",
+        "alias": "app",
+        "type": "app_launcher",
+        "args": {},
+        "priority": 2,
+        "home": "Home"
+    },
+    {
+        "name": "Categories",
+        "alias": "help",
+        "type": "categories",
+        "args": {
+            "Kill Processes": {
+                "icon": "sherlock-process",
+                "icon_class": "reactive",
+                "exec": "kill",
+                "search_string": "terminate;kill;process"
+            },
+            "Power Menu": {
+                "icon": "battery-full-symbolic",
+                "icon_class": "reactive",
+                "exec": "pm",
+                "search_string": "powermenu;"
+            }
+        },
+        "priority": 4,
+        "home": "Home"
+    },
+    {
+        "name": "Web Search",
+        "display_name": "Google Search",
+        "tag_start": "{keyword}",
+        "tag_end": "{keyword}",
+        "alias": "gg",
+        "type": "web_launcher",
+        "args": {
+            "search_engine": "google",
+            "icon": "google"
+        },
+        "priority": 100
+    },
+    {
+        "name": "Calculator",
+        "type": "calculation",
+        "args": {
+            "capabilities": [
+                "calc.math",
+                "calc.units"
+            ]
+        },
+        "on_return": "copy",
+        "priority": 1
+    },
+    {
+        "name": "Spotify",
+        "type": "audio_sink",
+        "args": {},
+        "async": true,
+        "priority": 1,
+        "home": "Home",
+        "spawn_focus": false,
+        "actions": [
+            {
+                "name": "Skip",
+                "icon": "media-seek-forward",
+                "exec": "playerctl next",
+                "method": "command"
+            },
+            {
+                "name": "Previous",
+                "icon": "media-seek-backward",
+                "exec": "playerctl previous",
+                "method": "command"
+            }
+        ],
+        "binds": [
+            {
+                "bind": "control+p",
+                "callback": "playpause",
+                "exit": false
+            },
+            {
+                "bind": "control+l",
+                "callback": "next",
+                "exit": false
+            },
+            {
+                "bind": "control+h",
+                "callback": "previous",
+                "exit": false
+            }
+        ]
+    }
+]

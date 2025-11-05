@@ -1,4 +1,4 @@
-#!/run/current-system/sw/bin/bash
+#!/bin/bash
 
 
 a=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9,.]*//g')

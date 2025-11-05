@@ -1,10 +1,9 @@
-#!/run/current-system/sw/bin/bash
-sass /home/human/niriconfig/waybar/style.scss /home/human/niriconfig/waybar/style-output.css
+#!/bin/bash
+sass ~/.config/waybar/style.scss ~/.config/waybar/style.css
 
-if pgrep -x ".waybar-wrapped" > /dev/null
+if pgrep -x "waybar" > /dev/null
 then
-    pkill ".waybar-wrapped"
+    pkill "waybar"
 fi
-# waybar -c /home/human/niriconfig/waybar/config.jsonc -s /home/human/niriconfig/waybar/style-output.css
-# /home/human/Projects/Waybar/build/waybar -c /home/human/niriconfig/waybar/config.jsonc -s /home/human/niriconfig/waybar/style-output.css
-waybar -c /home/human/niriconfig/waybar/config.jsonc -s /home/human/niriconfig/waybar/style-output.css
+
+waybar 

@@ -9,7 +9,7 @@
 
 output "eDP-1" {
     // off
-    mode "2560x1600@120"
+    mode "2560x1600@165"
     scale 1.5
     position x=0 y=0
     variable-refresh-rate on-demand=true
@@ -37,7 +37,6 @@ environment {
     QT_QPA_PLATFORM "wayland"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     XDG_MENU_PREFIX "arch-"
-    DISPLAY ":0"
 }
 
 input {
@@ -70,7 +69,7 @@ input {
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
-        disabled-on-external-mouse
+        click-method "clickfinger"
     }
 
     mouse {
@@ -147,7 +146,7 @@ cursor {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 7
+    gaps 6
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -196,7 +195,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 1
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -231,7 +230,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 2
+        width 1
         active-color "#ffc87f"
         inactive-color "#505050"
 
@@ -302,23 +301,24 @@ window-rule {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "xwayland-satellite"
-// spawn-at-startup "steam -silent"
-// spawn-at-startup "flatpak run com.discordapp.Discord --start-minimized"
-// spawn-at-startup "flatpak run org.signal.Signal"
-spawn-at-startup "bash" "/home/human/niriconfig/shell/start.sh"
-spawn-at-startup "flatpak" "run org.telegram.desktop -startintray"
-spawn-at-startup "/home/human/.bash_profile"
-spawn-at-startup "hyprpaper"
+spawn-sh-at-startup "flatpak run com.discordapp.Discord --start-minimized"
+spawn-sh-at-startup "flatpak run org.signal.Signal"
+spawn-sh-at-startup "flatpak run org.telegram.desktop -startintray"
+spawn-at-startup "/home/frame/.bash_profile"
+spawn-at-startup "elephant"
+spawn-at-startup "walker --gapplication-service"
 spawn-at-startup "kdeconnect-indicator"
-spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store" "#" "Stores" "only" "text" "data"
-spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store" "#" "Stores" "only" "image" "data"
-// spawn-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
+spawn-sh-at-startup "bash /home/frame/.config/waybar/startwaybar.sh"
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store # Stores only text data"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store # Stores only image data"
 spawn-at-startup "heroic"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "swayosd-libinput-backend"
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "bash" "/home/human/niriconfig/brightness/restore-brightness.sh"
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+spawn-at-startup "swww-daemon"
+spawn-sh-at-startup "sleep 2 && /home/frame/.config/swww/wallpaper-timer.sh"
+spawn-sh-at-startup "bash /home/frame/nixconfig/brightness/restore-brightness.sh"
+spawn-sh-at-startup "swayidle -w timeout 300 'brightnessctl -s set 10%' resume 'brightnessctl -r' timeout 480 'systemctl suspend' lock 'hyprlock' before-sleep 'hyprlock'"
 
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -362,6 +362,10 @@ animations {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 
+switch-events {
+    lid-close { spawn "systemctl sleep"; }
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -385,31 +389,32 @@ binds {
     Mod+B hotkey-overlay-title="Run browser" { spawn "firefox"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn "hyprpicker"; }
 
-    Mod+space hotkey-overlay-title="Run rofi drun" { spawn "bash" "/home/human/niriconfig/rofi/start-drun.sh"; }
-    Mod+Escape hotkey-overlay-title="Run calc menu" { spawn "gnome-system-monitor"; }
-    Mod+Shift+W hotkey-overlay-title="ags restart" {spawn "bash" "/home/human/niriconfig/shell/start.sh"; }
-    Mod+M hotkey-overlay-title="Run power menu" { spawn "bash" "/home/human/niriconfig/rofi/powermenu/run-power-menu.sh"; }
-    Mod+V hotkey-overlay-title="Run clipboard menu" { spawn "bash" "/home/human/niriconfig/rofi/clipmenu/start-clipmenu.sh"; }
-    Mod+X hotkey-overlay-title="Run calc menu" { spawn "bash" "/home/human/niriconfig/rofi/calculator/start-calcmenu.sh"; }
-    
+    Mod+Space hotkey-overlay-title="Run walker drun" { spawn "walker"; }
+    Mod+Escape hotkey-overlay-title="Run system monitor" { spawn "gnome-system-monitor"; }
+    Mod+Shift+W hotkey-overlay-title="ags restart" {spawn-sh "bash ~/.config/waybar/startwaybar.sh"; }
+    Mod+M hotkey-overlay-title="Run power menu" { spawn-sh "bash ~/.config/walker/powermenu/run-power-menu.sh"; }
+    // Mod+V hotkey-overlay-title="Run clipboard menu" { spawn-sh "bash ~/.config/wofi/clipmenu/start-clipmenu.sh"; }
+    // Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/wofi/calculator/start-calcmenu.sh"; }
+    Mod+Shift+B hotkey-overlay-title="Restart wallpaper timer" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
+
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
-    // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
+    // Mod+T { spawn "bash -c notify-send hello && exec alacritty"; }
 
-    XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
-    XF86AudioPause allow-when-locked=true { spawn "playerctl" "play-pause"; }
-    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
-    XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+    XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPause allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "bash" "/home/human/niriconfig/volumelimit.sh"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "-5"; }
-    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "swayosd-client --output-volume 5"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "swayosd-client --output-volume -5"; } 
+    XF86AudioMute        allow-when-locked=true { spawn-sh "swayosd-client --output-volume mute-toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "swayosd-client --input-volume mute-toggle"; }
 
-    XF86MonBrightnessUp     allow-when-locked=true { spawn "/home/human/niriconfig/brightness/change-brightness.sh" "+5"; }
-    XF86MonBrightnessDown   allow-when-locked=true { spawn "/home/human/niriconfig/brightness/change-brightness.sh" "-5"; }
+    XF86MonBrightnessUp     allow-when-locked=true { spawn-sh " bash ~/.config/brightness/change-brightness.sh +5"; }
+    XF86MonBrightnessDown   allow-when-locked=true { spawn-sh "bash ~/.config/brightness/change-brightness.sh -5"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -521,8 +526,8 @@ binds {
     // These binds are also affected by touchpad's natural-scroll, so these
     // example binds are "inverted", since we have natural-scroll enabled for
     // touchpads by default.
-    // Mod+TouchpadScrollDown { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.02+"; }
-    // Mod+TouchpadScrollUp   { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.02-"; }
+    // Mod+TouchpadScrollDown { spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+"; }
+    // Mod+TouchpadScrollUp   { spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-"; }
 
     // You can refer to workspaces by index. However, keep in mind that
     // niri is a dynamic workspace system, so these commands are kind of

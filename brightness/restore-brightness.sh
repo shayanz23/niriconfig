@@ -1,5 +1,5 @@
 #!/run/current-system/sw/bin/bash
 
-previous=$(cat /home/human/niriconfig/brightness/brightness-level)
+previous=$(cat ~/nixconfig/brightness/brightness-level)
 
 brightnessctl set $previous
