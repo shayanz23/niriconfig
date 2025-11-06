@@ -1,7 +1,7 @@
 * {
   all: unset;
   font-size: 1.02em;
-  color: #141415;
+  color: #f1f5ff;
   padding: 0;
 }
 
@@ -9,27 +9,27 @@
   padding: 0.35rem;
   margin: 5 0 0 5;
   border-radius: 0.8rem;
-  background: #ddcdff;
+  background: #161725;
 }
 
 .modules-center {
   padding: 0.35rem;
   margin: 5 0 0 0;
   border-radius: 0.8rem;
-  background: #ddcdff;
+  background: #161725;
 }
 
 .modules-right {
   padding: 0.35rem;
   margin: 5 5 0 0;
   border-radius: 0.8rem;
-  background: #ddcdff;
+  background: #161725;
 }
 
 tooltip {
-  background: #ddcdff;
+  background: #161725;
   border-radius: 0.8rem;
-  color: #141415;
+  color: #f1f5ff;
   padding: 0.55rem;
 }
 
@@ -84,37 +84,37 @@ tooltip {
 #custom-audio_idle_inhibitor:hover,
 #custom-drun:hover,
 #power-profiles-daemon:hover {
-  color: #6b57a8;
+  color: #a588fc;
   background: rgba(0, 0, 0, 0);
   border: 0;
 }
 
 #tray menu {
-  background: #ddcdff;
+  background: #161725;
   padding: 0.6rem;
   border-radius: 0.8rem;
 }
 
 #tray button {
-  color: #141415;
+  color: #f1f5ff;
 }
 
 #taskbar button {
   padding: 0;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
-  color: #141415;
+  color: #f1f5ff;
 }
 
 #workspaces button {
   padding: 0;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
-  color: #141415;
+  color: #f1f5ff;
 }
 
 #workspaces button.active {
-  color: #141415;
+  color: #f1f5ff;
   border: none;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
@@ -126,7 +126,7 @@ tooltip {
 }
 
 #workspaces button.empty.active {
-  color: #141415;
+  color: #f1f5ff;
   border: none;
 }
 
@@ -152,7 +152,7 @@ tooltip {
 }
 
 #custom-expand {
-  color: #141415;
+  color: #f1f5ff;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
   transition: all 0.3s ease;
 }
@@ -166,7 +166,7 @@ tooltip {
 #memory,
 #temperature {
   transition: all 0.3s ease;
-  color: #141415;
+  color: #f1f5ff;
 }
 
 #power-profiles-daemon {
