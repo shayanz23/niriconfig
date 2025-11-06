@@ -179,7 +179,8 @@
             "",
             ""
         ],
-        "max-length": 25
+        "max-length": 25,
+        "on-click": "bash ~/.config/rofi/powermenu/run-power-menu.sh"
     },
     "custom/audio_idle_inhibitor": {
         "format": "{icon}",

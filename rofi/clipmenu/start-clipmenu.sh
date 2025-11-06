@@ -1,8 +1,8 @@
 #!/run/current-system/sw/bin/bash
 
-if pgrep -x "wofi" > /dev/null
+if pgrep -x "rofi" > /dev/null
 then
-    pkill -x "wofi"
+    pkill -x "rofi"
 else
-    cliphist list | wofi --dmenu -p "clipboard: " | cliphist decode | wl-copy
+    cliphist list | rofi -dmenu -p "clipboard: " | cliphist decode | wl-copy
 fi

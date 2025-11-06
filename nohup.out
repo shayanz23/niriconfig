@@ -1,0 +1,276 @@
+[2025-11-06 10:59:28.576] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 10:59:28.580] [info] Discovered appearance 'dark'
+[2025-11-06 10:59:28.620] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:25960): Gtk-WARNING **: 10:59:28.620: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25960): Gtk-WARNING **: 10:59:28.620: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25960): Gtk-WARNING **: 10:59:28.620: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25960): Gtk-WARNING **: 10:59:28.620: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25960): Gtk-WARNING **: 10:59:28.620: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 10:59:28.628] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 10:59:28.641] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 10:59:28.913] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:00:27.471] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:00:27.475] [info] Discovered appearance 'dark'
+[2025-11-06 11:00:27.528] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:26337): Gtk-WARNING **: 11:00:27.528: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26337): Gtk-WARNING **: 11:00:27.528: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26337): Gtk-WARNING **: 11:00:27.529: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26337): Gtk-WARNING **: 11:00:27.529: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26337): Gtk-WARNING **: 11:00:27.529: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:00:27.536] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:00:27.550] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:00:27.825] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:00:36.174] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:00:36.179] [info] Discovered appearance 'dark'
+[2025-11-06 11:00:36.227] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:26591): Gtk-WARNING **: 11:00:36.228: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26591): Gtk-WARNING **: 11:00:36.228: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26591): Gtk-WARNING **: 11:00:36.228: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26591): Gtk-WARNING **: 11:00:36.228: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:26591): Gtk-WARNING **: 11:00:36.228: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:00:36.235] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:00:36.249] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:00:36.508] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:02:07.396] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:02:07.402] [info] Discovered appearance 'dark'
+[2025-11-06 11:02:07.441] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:27233): Gtk-WARNING **: 11:02:07.442: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27233): Gtk-WARNING **: 11:02:07.442: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27233): Gtk-WARNING **: 11:02:07.442: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27233): Gtk-WARNING **: 11:02:07.442: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27233): Gtk-WARNING **: 11:02:07.442: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:02:07.449] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:02:07.463] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:02:07.721] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:02:24.914] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:02:24.918] [info] Discovered appearance 'dark'
+[2025-11-06 11:02:24.962] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:27529): Gtk-WARNING **: 11:02:24.962: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27529): Gtk-WARNING **: 11:02:24.962: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27529): Gtk-WARNING **: 11:02:24.962: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27529): Gtk-WARNING **: 11:02:24.962: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27529): Gtk-WARNING **: 11:02:24.962: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:02:24.970] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:02:24.984] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:02:25.297] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:02:36.450] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:02:36.455] [info] Discovered appearance 'dark'
+[2025-11-06 11:02:36.500] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:27806): Gtk-WARNING **: 11:02:36.501: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27806): Gtk-WARNING **: 11:02:36.501: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27806): Gtk-WARNING **: 11:02:36.501: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27806): Gtk-WARNING **: 11:02:36.501: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:27806): Gtk-WARNING **: 11:02:36.501: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:02:36.509] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:02:36.526] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:02:36.802] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:04:30.061] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:04:30.065] [info] Discovered appearance 'dark'
+[2025-11-06 11:04:30.106] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:28369): Gtk-WARNING **: 11:04:30.106: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28369): Gtk-WARNING **: 11:04:30.106: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28369): Gtk-WARNING **: 11:04:30.106: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28369): Gtk-WARNING **: 11:04:30.106: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28369): Gtk-WARNING **: 11:04:30.106: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:04:30.114] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:04:30.130] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:04:30.411] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:04:40.189] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:04:40.192] [info] Discovered appearance 'dark'
+[2025-11-06 11:04:40.252] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:28631): Gtk-WARNING **: 11:04:40.252: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28631): Gtk-WARNING **: 11:04:40.252: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28631): Gtk-WARNING **: 11:04:40.252: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28631): Gtk-WARNING **: 11:04:40.252: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28631): Gtk-WARNING **: 11:04:40.252: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:04:40.260] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:04:40.273] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:04:40.544] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:04:47.810] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:04:47.813] [info] Discovered appearance 'dark'
+[2025-11-06 11:04:47.850] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:28890): Gtk-WARNING **: 11:04:47.851: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28890): Gtk-WARNING **: 11:04:47.851: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28890): Gtk-WARNING **: 11:04:47.851: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28890): Gtk-WARNING **: 11:04:47.851: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:28890): Gtk-WARNING **: 11:04:47.851: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:04:47.858] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:04:47.874] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:04:48.143] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:05:45.193] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:05:45.197] [info] Discovered appearance 'dark'
+[2025-11-06 11:05:45.241] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:29295): Gtk-WARNING **: 11:05:45.241: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29295): Gtk-WARNING **: 11:05:45.241: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29295): Gtk-WARNING **: 11:05:45.241: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29295): Gtk-WARNING **: 11:05:45.241: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29295): Gtk-WARNING **: 11:05:45.241: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:05:45.248] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:05:45.262] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:05:45.528] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:05:55.803] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:05:55.808] [info] Discovered appearance 'dark'
+[2025-11-06 11:05:55.847] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:29570): Gtk-WARNING **: 11:05:55.848: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29570): Gtk-WARNING **: 11:05:55.848: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29570): Gtk-WARNING **: 11:05:55.848: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29570): Gtk-WARNING **: 11:05:55.848: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29570): Gtk-WARNING **: 11:05:55.848: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:05:55.855] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:05:55.869] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:05:56.154] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:06:09.236] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:06:09.240] [info] Discovered appearance 'dark'
+[2025-11-06 11:06:09.277] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:29831): Gtk-WARNING **: 11:06:09.277: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29831): Gtk-WARNING **: 11:06:09.278: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29831): Gtk-WARNING **: 11:06:09.278: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29831): Gtk-WARNING **: 11:06:09.278: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29831): Gtk-WARNING **: 11:06:09.278: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:06:09.284] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:06:09.298] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:06:09.570] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
+[2025-11-06 11:06:27.086] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:06:27.091] [info] Discovered appearance 'dark'
+[2025-11-06 11:06:27.125] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:30098): Gtk-WARNING **: 11:06:27.126: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30098): Gtk-WARNING **: 11:06:27.126: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30098): Gtk-WARNING **: 11:06:27.126: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30098): Gtk-WARNING **: 11:06:27.126: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30098): Gtk-WARNING **: 11:06:27.126: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:06:27.133] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:06:27.147] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:06:27.421] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+[2025-11-06 11:16:29.712] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 74 not found
+[2025-11-06 11:16:29.718] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 74 not found
+[2025-11-06 11:16:29.723] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 74 not found
+Terminated                 waybar
+[2025-11-06 11:18:18.589] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:18:18.592] [info] Discovered appearance 'dark'
+[2025-11-06 11:18:18.643] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:31762): Gtk-WARNING **: 11:18:18.644: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:31762): Gtk-WARNING **: 11:18:18.644: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:31762): Gtk-WARNING **: 11:18:18.644: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:31762): Gtk-WARNING **: 11:18:18.644: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:31762): Gtk-WARNING **: 11:18:18.644: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:18:18.652] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:18:18.666] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:18:18.940] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+[2025-11-06 11:23:00.124] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 74 not found
+[2025-11-06 11:23:00.130] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 74 not found
+[2025-11-06 11:23:00.135] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 74 not found
+Terminated                 waybar
+[2025-11-06 11:33:23.696] [info] Using configuration file /home/frame/.config/waybar/config
+[2025-11-06 11:33:23.700] [info] Discovered appearance 'dark'
+[2025-11-06 11:33:23.744] [info] Using CSS file /home/frame/.config/waybar/style.css
+
+(waybar:34347): Gtk-WARNING **: 11:33:23.745: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:34347): Gtk-WARNING **: 11:33:23.745: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:34347): Gtk-WARNING **: 11:33:23.745: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:34347): Gtk-WARNING **: 11:33:23.745: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:34347): Gtk-WARNING **: 11:33:23.745: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 11:33:23.752] [info] Niri IPC starting
+sh: line 1: sway-audio-idle-inhibit: command not found
+[2025-11-06 11:33:23.766] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
+[2025-11-06 11:33:24.074] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
+Terminated                 waybar
