@@ -2,6 +2,7 @@
     "position": "top",
     "layer": "top",
     "modules-right": [
+        "custom/audio_idle_inhibitor",
         "idle_inhibitor",
         "tray",
         "power-profiles-daemon",
@@ -15,6 +16,7 @@
         "clock"
     ],
     "modules-left": [
+        "custom/drun",
         "niri/workspaces",
         "wlr/taskbar",
         "mpris"
@@ -144,35 +146,55 @@
         }
     },
     "custom/pmenu": {
-        "on-click": "bash /home/frame/niriconfig/rofi/powermenu/run-power-menu.sh",
+        "on-click": "bash ~/.config/rofi/powermenu/run-power-menu.sh",
         "format": ""
     },
     "custom/cmenu": {
-        "on-click": "bash /home/frame/niriconfig/rofi/clipmenu/start-clipmenu.sh",
+        "on-click": "bash ~/.config/rofi/clipmenu/start-clipmenu.sh",
         "format": ""
     },
-      
     "network": {
-    "format": "{ifname}",
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
-    "format-disconnected": "", //An empty format will hide the module.
-    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} ",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50
-  },
-
-  "battery": {
-    "bat": "BAT1",
-    "interval": 60,
-    "states": {
-        "warning": 30,
-        "critical": 15
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
     },
-    "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", ""],
-    "max-length": 25
-  }
+    "battery": {
+        "bat": "BAT1",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "max-length": 25
+    },
+    "custom/audio_idle_inhibitor": {
+        "format": "{icon}",
+        "exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+        "exec-if": "which sway-audio-idle-inhibit",
+        "return-type": "json",
+        "format-icons": {
+            "output": "",
+            "input": "",
+            "output-input": "  ",
+            "none": ""
+        }
+    },
+    "custom/drun": {
+        "format": "Start",
+        "on-click": "bash ~/.config/rofi/start-drun.sh"
+    }
 }

@@ -1,6 +1,6 @@
 * {
   all: unset;
-  font-size: 1.03em;
+  font-size: 1.02em;
   color: #ecf1ff;
   padding: 0;
 }
@@ -57,6 +57,8 @@ tooltip {
 #temperature,
 #idle_inhibitor,
 #mpris,
+#custom-audio_idle_inhibitor,
+#custom-drun,
 #power-profiles-daemon {
   transition: all 0.3s ease;
   padding: 0.3rem;
@@ -79,6 +81,8 @@ tooltip {
 #workspaces button:hover,
 #taskbar button:hover,
 #idle_inhibitor:hover,
+#custom-audio_idle_inhibitor:hover,
+#custom-drun:hover,
 #power-profiles-daemon:hover {
   color: #a3b4ff;
   background: rgba(0, 0, 0, 0);
@@ -91,25 +95,7 @@ tooltip {
   border-radius: 0.8rem;
 }
 
-#window {
-  font-size: 1.02em;
-}
-
-#window * {
-  font-size: 1.02em;
-}
-
-#mpris {
-  font-size: 1.02em;
-}
-
 #tray button {
-  padding: 0;
-  color: #ecf1ff;
-}
-
-#custom-notification {
-  transition: all 0.3s ease;
   color: #ecf1ff;
 }
 

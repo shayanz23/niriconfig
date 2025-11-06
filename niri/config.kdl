@@ -16,7 +16,7 @@ output "eDP-1" {
     focus-at-startup
 }
 
-output "DP-1" {
+output "DP-2" {
     // off
     mode "3840x2160@164.992"
     scale 1.5
@@ -25,7 +25,7 @@ output "DP-1" {
     focus-at-startup
 }
 
-output "DP-2" {
+output "DP-1" {
     // off
     mode "2560x1440@164.835"
     scale 1
@@ -75,7 +75,7 @@ input {
     mouse {
         // off
         // natural-scroll
-        // accel-speed 0.2
+        accel-speed -0.7
         accel-profile "flat"
         // scroll-method "no-scroll"
         
@@ -292,7 +292,7 @@ layout {
 }
 
 window-rule {
-    open-maximized true
+    open-maximized false
 }
 
 // Add lines like this to spawn processes at startup.
@@ -300,15 +300,13 @@ window-rule {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-sh-at-startup "flatpak run com.discordapp.Discord --start-minimized"
 spawn-sh-at-startup "flatpak run org.signal.Signal"
 spawn-sh-at-startup "flatpak run org.telegram.desktop -startintray"
-spawn-at-startup "/home/frame/.bash_profile"
-spawn-at-startup "elephant"
-spawn-at-startup "walker --gapplication-service"
+spawn-sh-at-startup "sway-audio-idle-inhibit"
+spawn-at-startup "~/.bash_profile"
 spawn-at-startup "kdeconnect-indicator"
-spawn-sh-at-startup "bash /home/frame/.config/waybar/startwaybar.sh"
+spawn-sh-at-startup "bash ~/.config/waybar/startwaybar.sh"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store # Stores only text data"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store # Stores only image data"
 spawn-at-startup "heroic"
@@ -316,8 +314,8 @@ spawn-at-startup "swayosd-server"
 spawn-at-startup "swayosd-libinput-backend"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "sleep 2 && /home/frame/.config/swww/wallpaper-timer.sh"
-spawn-sh-at-startup "bash /home/frame/nixconfig/brightness/restore-brightness.sh"
+spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
+spawn-sh-at-startup "bash ~/.config/brightness/restore-brightness.sh"
 spawn-sh-at-startup "swayidle -w timeout 300 'brightnessctl -s set 10%' resume 'brightnessctl -r' timeout 480 'systemctl suspend' lock 'hyprlock' before-sleep 'hyprlock'"
 
 
@@ -345,6 +343,15 @@ animations {
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
+    window-open {
+        duration-ms 150
+        curve "ease-out-quad"
+    }
+
+    window-close {
+        duration-ms 150
+        curve "ease-out-quad"
+    }
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -384,17 +391,17 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
     Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+A hotkey-overlay-title="Open file manager" { spawn "thunar"; }
+    Mod+A hotkey-overlay-title="Open file manager" { spawn "nautilus"; }
     Mod+C hotkey-overlay-title="Run code" { spawn "code"; }
     Mod+B hotkey-overlay-title="Run browser" { spawn "firefox"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn "hyprpicker"; }
 
-    Mod+Space hotkey-overlay-title="Run walker drun" { spawn "walker"; }
+    Mod+Space hotkey-overlay-title="Run rofi drun" { spawn-sh "bash ~/niriconfig/rofi/start-drun.sh"; }
     Mod+Escape hotkey-overlay-title="Run system monitor" { spawn "gnome-system-monitor"; }
     Mod+Shift+W hotkey-overlay-title="ags restart" {spawn-sh "bash ~/.config/waybar/startwaybar.sh"; }
-    Mod+M hotkey-overlay-title="Run power menu" { spawn-sh "bash ~/.config/walker/powermenu/run-power-menu.sh"; }
-    // Mod+V hotkey-overlay-title="Run clipboard menu" { spawn-sh "bash ~/.config/wofi/clipmenu/start-clipmenu.sh"; }
-    // Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/wofi/calculator/start-calcmenu.sh"; }
+    Mod+M hotkey-overlay-title="Run power menu" { spawn-sh "bash ~/.config/rofi/powermenu/run-power-menu.sh"; }
+    Mod+V hotkey-overlay-title="Run clipboard menu" { spawn-sh "bash ~/.config/rofi/clipmenu/start-clipmenu.sh"; }
+    Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
     Mod+Shift+B hotkey-overlay-title="Restart wallpaper timer" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.

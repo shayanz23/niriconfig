@@ -4,4 +4,4 @@ amount=$1
 
 echo $(swayosd-client --brightness $amount)
 
-brightnessctl get | tee ~/nixconfig/brightness/brightness-level
+brightnessctl get | tee ~/.config/brightness/brightness-level

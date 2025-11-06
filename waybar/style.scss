@@ -1,5 +1,5 @@
 @use "sass:color";
-@use '/home/frame/niriconfig/colors/index';
+@use '../colors/index';
 
 $base-padding: 0.3rem;
 $child-padding: 0.3rem;
@@ -7,7 +7,7 @@ $roundiness: 0.8rem;
 
 * {
     all: unset;
-    font-size: 1.03em;
+    font-size: 1.02em;
     color: index.$fg;
     padding:0;
     // font-family: 'Proxima Nova Rg';
@@ -66,12 +66,16 @@ tooltip {
 #temperature,
 #idle_inhibitor,
 #mpris,
+#custom-audio_idle_inhibitor,
+#custom-drun,
 #power-profiles-daemon {
     transition: all .3s ease;
     padding: $base-padding;
     padding-top: 0;
     padding-bottom: 0;
 }
+
+
 
 #clock:hover,
 #custom-pacman:hover,
@@ -88,6 +92,8 @@ tooltip {
 #workspaces button:hover,
 #taskbar button:hover,
 #idle_inhibitor:hover,
+#custom-audio_idle_inhibitor:hover,
+#custom-drun:hover,
 #power-profiles-daemon:hover {
     color: index.$fg-alt;
     background: rgba(0, 0, 0, 0);
@@ -100,27 +106,10 @@ tooltip {
     border-radius: $roundiness;
 }
 
-#window {
-    font-size: 1.02em;
-}
-
-#window * {
-    font-size: 1.02em;
-}
-
-#mpris {
-    font-size: 1.02em;
-}
-
 #tray button {
-    padding: 0;
     color: index.$fg;
 }
 
-#custom-notification {
-    transition: all .3s ease;
-    color: index.$fg;
-}
 
 #taskbar button {
     padding: 0;
