@@ -1,1 +1,0 @@
-echo -e "suspend\nshutdown\nlogout\nrestart" | walker  -d -p  "power options: " | bash ~/niriconfig/walker/powermenu/actions.sh

@@ -274,3 +274,351 @@ sh: line 1: sway-audio-idle-inhibit: command not found
 [2025-11-06 11:33:23.766] [error] audio_idle_inhibitor stopped unexpectedly, is it endless?
 [2025-11-06 11:33:24.074] [info] Bar configured (width: 1707, height: 34) for output: eDP-1
 Terminated                 waybar
+[2025-11-06 19:36:04.885] [info] Using configuration file /home/theseus/.config/waybar/config
+[2025-11-06 19:36:04.886] [info] Discovered appearance 'dark'
+[2025-11-06 19:36:04.895] [info] Using CSS file /home/theseus/.config/waybar/style.css
+
+(waybar:24835): Gtk-WARNING **: 19:36:04.895: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:24835): Gtk-WARNING **: 19:36:04.895: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:24835): Gtk-WARNING **: 19:36:04.895: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:24835): Gtk-WARNING **: 19:36:04.895: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:24835): Gtk-WARNING **: 19:36:04.895: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 19:36:04.899] [info] Niri IPC starting
+[2025-11-06 19:36:04.905] [warning] No battery named BAT1
+[2025-11-06 19:36:04.969] [warning] mpris[plasma-browser-integration]: ignoring player update
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.976: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.976: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.976: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.976: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.976: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.976: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.977: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.977: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.977: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.977: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.977: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:24835): Gtk-CRITICAL **: 19:36:04.977: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-11-06 19:36:04.987] [info] Bar configured (width: 2560, height: 34) for output: DP-2
+[2025-11-06 19:36:14.902] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:19.902] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:24.902] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:29.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:34.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:39.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:44.902] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:49.902] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:54.902] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:36:59.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:04.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:09.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:14.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:19.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:24.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:29.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:34.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:39.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:44.903] [warning] mpris[plasma-browser-integration]: ignoring player update
+Terminated                 waybar
+[2025-11-06 19:37:47.120] [info] Using configuration file /home/theseus/.config/waybar/config
+[2025-11-06 19:37:47.121] [info] Discovered appearance 'dark'
+[2025-11-06 19:37:47.129] [info] Using CSS file /home/theseus/.config/waybar/style.css
+
+(waybar:25514): Gtk-WARNING **: 19:37:47.129: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25514): Gtk-WARNING **: 19:37:47.129: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25514): Gtk-WARNING **: 19:37:47.129: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25514): Gtk-WARNING **: 19:37:47.129: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:25514): Gtk-WARNING **: 19:37:47.129: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 19:37:47.134] [info] Niri IPC starting
+[2025-11-06 19:37:47.139] [warning] No battery named BAT1
+[2025-11-06 19:37:47.202] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:37:47.217] [info] Bar configured (width: 2560, height: 34) for output: DP-2
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:25514): Gtk-CRITICAL **: 19:37:47.219: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-11-06 19:37:57.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:02.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:07.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:12.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:14.883] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 78 not found
+[2025-11-06 19:38:14.885] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 78 not found
+[2025-11-06 19:38:14.887] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 78 not found
+[2025-11-06 19:38:17.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:22.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:27.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:32.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:37.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:42.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:47.137] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:52.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:38:57.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:02.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:07.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:12.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:17.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:22.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:27.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:32.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:37.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:42.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:47.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:52.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:39:57.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:02.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:07.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:12.138] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:17.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:22.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:27.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:32.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:33.479] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 78 not found
+[2025-11-06 19:40:33.482] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 78 not found
+[2025-11-06 19:40:33.483] [warning] [wireplumber]: (onMixerChanged: Audio/Sink) - Object with id 78 not found
+[2025-11-06 19:40:37.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:42.139] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:47.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:40:57.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:02.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:07.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:12.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:17.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:22.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:27.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:32.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:37.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:42.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:47.140] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:52.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:41:57.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:02.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:07.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:12.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:17.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:22.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:27.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:32.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:37.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:42:42.141] [warning] mpris[plasma-browser-integration]: ignoring player update
+Terminated                 waybar
+[2025-11-06 19:50:58.692] [info] Using configuration file /home/theseus/.config/waybar/config
+[2025-11-06 19:50:58.693] [info] Discovered appearance 'dark'
+[2025-11-06 19:50:58.701] [info] Using CSS file /home/theseus/.config/waybar/style.css
+
+(waybar:29650): Gtk-WARNING **: 19:50:58.701: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29650): Gtk-WARNING **: 19:50:58.701: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29650): Gtk-WARNING **: 19:50:58.701: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29650): Gtk-WARNING **: 19:50:58.701: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:29650): Gtk-WARNING **: 19:50:58.701: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 19:50:58.704] [info] Niri IPC starting
+[2025-11-06 19:50:58.709] [warning] No battery named BAT1
+[2025-11-06 19:50:58.790] [warning] mpris[plasma-browser-integration]: ignoring player update
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:29650): Gtk-CRITICAL **: 19:50:58.794: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-11-06 19:50:58.803] [info] Bar configured (width: 2560, height: 34) for output: DP-2
+[2025-11-06 19:51:08.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:13.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:18.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:23.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:28.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:33.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:38.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:43.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:48.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:53.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:51:58.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:03.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:08.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:13.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:18.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:23.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:28.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:33.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:38.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:43.707] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:48.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:53.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:52:58.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:03.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:08.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:13.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:18.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:23.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:28.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:33.708] [warning] mpris[plasma-browser-integration]: ignoring player update
+Terminated                 waybar
+[2025-11-06 19:53:37.005] [info] Using configuration file /home/theseus/.config/waybar/config
+[2025-11-06 19:53:37.006] [info] Discovered appearance 'dark'
+[2025-11-06 19:53:37.013] [info] Using CSS file /home/theseus/.config/waybar/style.css
+
+(waybar:30658): Gtk-WARNING **: 19:53:37.014: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30658): Gtk-WARNING **: 19:53:37.014: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30658): Gtk-WARNING **: 19:53:37.014: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30658): Gtk-WARNING **: 19:53:37.014: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:30658): Gtk-WARNING **: 19:53:37.014: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 19:53:37.016] [info] Niri IPC starting
+[2025-11-06 19:53:37.021] [warning] No battery named BAT1
+[2025-11-06 19:53:37.115] [warning] mpris[plasma-browser-integration]: ignoring player update
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.122: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.122: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:30658): Gtk-CRITICAL **: 19:53:37.123: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-11-06 19:53:37.132] [info] Bar configured (width: 2560, height: 34) for output: DP-2
+[2025-11-06 19:53:47.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:52.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:53:57.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:02.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:07.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:12.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:17.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:22.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:27.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:54:32.019] [warning] mpris[plasma-browser-integration]: ignoring player update
+Terminated                 waybar
+[2025-11-06 19:57:07.499] [info] Using configuration file /home/theseus/.config/waybar/config
+[2025-11-06 19:57:07.500] [info] Discovered appearance 'dark'
+[2025-11-06 19:57:07.508] [info] Using CSS file /home/theseus/.config/waybar/style.css
+
+(waybar:32535): Gtk-WARNING **: 19:57:07.508: Theme parsing error: style.css:10:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:32535): Gtk-WARNING **: 19:57:07.508: Theme parsing error: style.css:10:17: Not using units is deprecated. Assuming 'px'.
+
+(waybar:32535): Gtk-WARNING **: 19:57:07.508: Theme parsing error: style.css:17:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:32535): Gtk-WARNING **: 19:57:07.508: Theme parsing error: style.css:24:11: Not using units is deprecated. Assuming 'px'.
+
+(waybar:32535): Gtk-WARNING **: 19:57:07.508: Theme parsing error: style.css:24:13: Not using units is deprecated. Assuming 'px'.
+[2025-11-06 19:57:07.510] [info] Niri IPC starting
+[2025-11-06 19:57:07.516] [warning] No battery named BAT1
+[2025-11-06 19:57:07.593] [warning] mpris[plasma-browser-integration]: ignoring player update
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.599: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.599: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.599: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.599: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.599: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.599: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.600: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.600: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.600: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.600: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.600: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:32535): Gtk-CRITICAL **: 19:57:07.600: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-11-06 19:57:07.609] [info] Bar configured (width: 2560, height: 34) for output: DP-2
+[2025-11-06 19:57:17.513] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:22.513] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:27.513] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:32.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:37.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:42.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:47.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:52.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:57:57.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:02.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:07.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:12.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:17.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:22.514] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:27.515] [warning] mpris[plasma-browser-integration]: ignoring player update
+[2025-11-06 19:58:32.515] [warning] mpris[plasma-browser-integration]: ignoring player update
+Terminated                 waybar

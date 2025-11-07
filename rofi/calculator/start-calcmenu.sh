@@ -4,5 +4,5 @@ if pgrep -x "rofi" > /dev/null
 then
     pkill -x "rofi"
 else
-    rofi -show calc
+    rofi -show calc -p "Calculate: "
 fi

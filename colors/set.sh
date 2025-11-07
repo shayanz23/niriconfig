@@ -5,7 +5,9 @@ read -l piped_data
 set themes (basename -a ~/.config/colors/themes/*/)
 
 if contains $piped_data $themes
+    echo $piped_data
     cp -f ~/.config/colors/themes/$piped_data/_index.scss ~/.config/colors/_index.scss
+    sass ~/.config/rofi/config.scss ~/.config/rofi/config.rasi
 else
     echo "invalid option."
     exit 1

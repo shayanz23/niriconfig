@@ -1,37 +1,43 @@
+@use "sass:color";
+@use '../colors/index';
+
 configuration {
   display-drun: "Applications: ";
   display-calc: "Calculate: ";
   drun-display-format: "{icon} {name}";
   modi: "window,run,drun,calc";
   show-icons: true;
-  icon-theme: "Papirus";
+  icon-theme: "Papirus"
 }
 
 @theme "/dev/null"
+
 * {
   border-width: 0;
-  color: #eeffee;
-  background-color: #0a140a;
+  color: index.$fg;
+  background-color: index.$bg;
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
-  text-color: #eeffee;
+  text-color: index.$fg;
   vertical-align: 0.5;
 }
+
 inputbar {
   padding: 5px;
+
 }
 
 entry {
   cursor: pointer;
-  cursor-color: #81ff94;
+  cursor-color: index.$fg-alt;
   cursor-width: 1px;
   hide-cursor-on-empty: true;
   border-width: 0;
   height: 20px;
   padding: 5px;
-  background-color: #5b8158;
+  background-color: index.$bg-alt;
   border-radius: 7px;
 }
 
@@ -43,7 +49,7 @@ listview {
   padding: 5px;
 }
 
-window {
+window { 
   width: 30%;
   padding: 5px;
   border-radius: 10px;
@@ -54,11 +60,11 @@ element-text {
 }
 
 element-text selected.normal {
-  background-color: #4dc655;
+  background-color: index.$bg-selected;
 }
 
 element-icon selected.normal {
-  background-color: #4dc655;
+  background-color: index.$bg-selected;
 }
 
 element {
@@ -68,5 +74,3 @@ element {
 element-icon {
   size: 35;
 }
-
-/*# sourceMappingURL=config.rasi.map */
