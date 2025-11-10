@@ -10,13 +10,13 @@ configuration {
 @theme "/dev/null"
 * {
   border-width: 0;
-  color: #eeffee;
-  background-color: #0a140a;
+  color: #ffffff;
+  background-color: #221010;
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
-  text-color: #eeffee;
+  text-color: #ffffff;
   vertical-align: 0.5;
 }
 inputbar {
@@ -25,13 +25,13 @@ inputbar {
 
 entry {
   cursor: pointer;
-  cursor-color: #81ff94;
+  cursor-color: #fe7878;
   cursor-width: 1px;
   hide-cursor-on-empty: true;
   border-width: 0;
   height: 20px;
   padding: 5px;
-  background-color: #5b8158;
+  background-color: #815858;
   border-radius: 7px;
 }
 
@@ -54,11 +54,11 @@ element-text {
 }
 
 element-text selected.normal {
-  background-color: #4dc655;
+  background-color: #c64d4d;
 }
 
 element-icon selected.normal {
-  background-color: #4dc655;
+  background-color: #c64d4d;
 }
 
 element {
