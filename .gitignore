@@ -1,5 +1,6 @@
-brightness/brightness-level
-waybar/style.css
-waybar/style.css.map
-rofi/config.rasi
-rofi/config.rasi.map
+/brightness/brightness-level
+/waybar/style.css
+/waybar/style.css.map
+/rofi/config.rasi
+/rofi/config.rasi.map
+/colors/_index.scss

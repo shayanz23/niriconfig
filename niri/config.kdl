@@ -317,7 +317,7 @@ spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
 spawn-sh-at-startup "bash ~/.config/brightness/restore-brightness.sh"
 spawn-sh-at-startup "swayidle -w timeout 300 'brightnessctl -s set 10%' resume 'brightnessctl -r' timeout 480 'systemctl suspend' lock 'hyprlock' before-sleep 'hyprlock'"
-
+spawn-at-startup "kanshi"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
