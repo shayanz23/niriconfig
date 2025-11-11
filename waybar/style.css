@@ -9,25 +9,41 @@
   padding: 0.35rem;
   margin: 5 0 0 5;
   border-radius: 0.8rem;
+<<<<<<< HEAD
   background: #121b25;
+=======
+  background: #221010;
+>>>>>>> 57bf19695954b32e6b0769932e90ac43272e6b50
 }
 
 .modules-center {
   padding: 0.35rem;
   margin: 5 0 0 0;
   border-radius: 0.8rem;
+<<<<<<< HEAD
   background: #121b25;
+=======
+  background: #221010;
+>>>>>>> 57bf19695954b32e6b0769932e90ac43272e6b50
 }
 
 .modules-right {
   padding: 0.35rem;
   margin: 5 5 0 0;
   border-radius: 0.8rem;
+<<<<<<< HEAD
   background: #121b25;
 }
 
 tooltip {
   background: #121b25;
+=======
+  background: #221010;
+}
+
+tooltip {
+  background: #221010;
+>>>>>>> 57bf19695954b32e6b0769932e90ac43272e6b50
   border-radius: 0.8rem;
   color: #ffffff;
   padding: 0.55rem;
@@ -84,13 +100,21 @@ tooltip {
 #custom-audio_idle_inhibitor:hover,
 #custom-drun:hover,
 #power-profiles-daemon:hover {
+<<<<<<< HEAD
   color: #72b0fc;
+=======
+  color: #fe7878;
+>>>>>>> 57bf19695954b32e6b0769932e90ac43272e6b50
   background: rgba(0, 0, 0, 0);
   border: 0;
 }
 
 #tray menu {
+<<<<<<< HEAD
   background: #121b25;
+=======
+  background: #221010;
+>>>>>>> 57bf19695954b32e6b0769932e90ac43272e6b50
   padding: 0.6rem;
   border-radius: 0.8rem;
 }
