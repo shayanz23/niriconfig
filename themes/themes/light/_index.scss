@@ -1,0 +1,34 @@
+@use "sass:color";
+@use "sass:math";
+@use "sass:string";
+@use './color.scss' as c;
+
+@function dec-to-hex($dec) {
+  $hex: "0123456789abcdef";
+  $first: math.floor(math.div($dec, 16)) + 1;
+  $second: ($dec % 16) + 1;
+  @return string.slice($hex, $first, $first) + string.slice($hex, $second, $second);
+}
+
+@function to-hex($color) {
+  $r: math.round(color.channel($color, "red", $space: rgb));
+  $g: math.round(color.channel($color, "green", $space: rgb));
+  $b: math.round(color.channel($color, "blue", $space: rgb));
+  @return string.unquote("##{dec-to-hex($r)}#{dec-to-hex($g)}#{dec-to-hex($b)}");
+}
+
+$bg-color: color.scale(c.$color, $lightness: +95%, $saturation: -30%);
+$bg-alt-color: color.scale(c.$color, $lightness: +70%, $saturation: -70%);
+$bg-selected-color: color.scale(c.$color, $lightness: +20%, $saturation: -30%);
+
+$fg-color: color.scale(c.$color, $lightness: -99%);
+$fg-alt-color: c.$color;
+
+
+$bg: to-hex($bg-color);
+$bg-alt: to-hex($bg-alt-color);
+$bg-selected: to-hex($bg-selected-color);
+
+$fg: to-hex($fg-color);
+$fg-alt: c.$color;
+

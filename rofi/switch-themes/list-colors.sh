@@ -1,6 +1,6 @@
 #!/usr/bin/fish
 
-set target_dir ~/.config/themes/themes
+set target_dir ~/.config/themes/colors
 
 
 # List all directories

@@ -3,4 +3,6 @@
 /waybar/style.css.map
 /rofi/config.rasi
 /rofi/config.rasi.map
-/colors/_index.scss
+/themes/_index.scss
+/themes/color.scss
+nohup.out

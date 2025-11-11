@@ -1,5 +1,5 @@
 @use "sass:color";
-@use '../colors/index';
+@use '../themes/index';
 
 $base-padding: 0.3rem;
 $child-padding: 0.3rem;
@@ -7,37 +7,43 @@ $roundiness: 0.8rem;
 
 * {
     all: unset;
-    font-size: 1.02em;
-    color: index.$fg;
+    font-size: 1.03em;
+    color: index.$fg-color;
     padding:0;
     // font-family: 'Proxima Nova Rg';
 }
 
+window {
+    background: index.$bg-color;
+}
+
 .modules-left {
     padding: 0.35rem;
-    margin: 5 0 0 5;
+    margin: 0;
     border-radius: $roundiness;
-    background: index.$bg;
+    padding-bottom: 5px;
 }
 
 .modules-center {
     padding: 0.35rem;
-    margin: 5 0 0 0;
+    margin: 0;
     border-radius: $roundiness;
-    background: rgba(index.$bg, 1);
+    background: rgba(index.$bg-color, 1);
+    padding-bottom: 5px;
 }
 
 .modules-right {
     padding: 0.35rem;
-    margin: 5 5 0 0;
+    margin: 0;
     border-radius: $roundiness;
-    background: rgba(index.$bg, 1);
+    background: rgba(index.$bg-color, 1);
+    padding-bottom: 5px;
 }
 
 tooltip {
-    background: rgba(index.$bg, 1);
+    background: rgba(index.$bg-color, 1);
     border-radius: $roundiness;
-    color: index.$fg;
+    color: index.$fg-color;
     padding: 0.55rem;
 }
 
@@ -95,19 +101,19 @@ tooltip {
 #custom-audio_idle_inhibitor:hover,
 #custom-drun:hover,
 #power-profiles-daemon:hover {
-    color: index.$fg-alt;
+    color: index.$fg-alt-color;
     background: rgba(0, 0, 0, 0);
     border: 0;
 }
 
 #tray menu {
-    background: rgba(index.$bg, 1);
+    background: rgba(index.$bg-color, 1);
     padding: 0.6rem;
     border-radius: $roundiness;
 }
 
 #tray button {
-    color: index.$fg;
+    color: index.$fg-color;
 }
 
 
@@ -115,18 +121,18 @@ tooltip {
     padding: 0;
     padding-left: $child-padding;
     padding-right: $child-padding;
-    color: index.$fg;
+    color: index.$fg-color;
 }
 
 #workspaces button {
     padding: 0;
     padding-left: $child-padding;
     padding-right: $child-padding;
-    color: index.$fg;
+    color: index.$fg-color;
 }
 
 #workspaces button.active {
-    color: index.$fg;
+    color: index.$fg-color;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -138,7 +144,7 @@ tooltip {
 }
 
 #workspaces button.empty.active {
-    color: index.$fg;
+    color: index.$fg-color;
     border: none;
 }
 
@@ -164,7 +170,7 @@ tooltip {
 }
 
 #custom-expand {
-    color: rgba(index.$fg, 1);
+    color: rgba(index.$fg-color, 1);
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
     transition: all .3s ease;
 }
@@ -178,7 +184,7 @@ tooltip {
 #memory,
 #temperature {
     transition: all .3s ease;
-    color: index.$fg;
+    color: index.$fg-color;
 }
 
 #power-profiles-daemon {

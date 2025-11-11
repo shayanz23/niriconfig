@@ -293,6 +293,20 @@ layout {
 
 window-rule {
     open-maximized false
+
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
+layer-rule {
+    match namespace="swww"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="rofi"
+    baba-is-float true
+    opacity 0.95
 }
 
 // Add lines like this to spawn processes at startup.
