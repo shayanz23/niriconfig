@@ -21,7 +21,8 @@ window {
     padding: 0.35rem;
     margin: 0;
     border-radius: $roundiness;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
+    padding-top: 5px;
 }
 
 .modules-center {
@@ -29,7 +30,8 @@ window {
     margin: 0;
     border-radius: $roundiness;
     background: rgba(index.$bg-color, 1);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
+    padding-top: 5px;
 }
 
 .modules-right {
@@ -37,7 +39,8 @@ window {
     margin: 0;
     border-radius: $roundiness;
     background: rgba(index.$bg-color, 1);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
+    padding-top: 5px;
 }
 
 tooltip {

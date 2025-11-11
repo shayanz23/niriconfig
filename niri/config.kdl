@@ -170,6 +170,10 @@ layout {
         // fixed 1920
     }
 
+
+    background-color "transparent"
+
+
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
@@ -302,6 +306,8 @@ layer-rule {
     match namespace="swww"
     place-within-backdrop true
 }
+
+
 
 layer-rule {
     match namespace="rofi"
