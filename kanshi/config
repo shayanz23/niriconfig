@@ -6,5 +6,5 @@ profile mirror-hdmi {
 
 profile laptop-only {
     output eDP-1 enable mode 2560x1600@165
-    exec wl-present mirror eDP-1 --fullscreen-output DP-4 --fullscreen
+    exec pkill wl-mirror
 }
