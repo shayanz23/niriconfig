@@ -17,9 +17,9 @@
   @return string.unquote("##{dec-to-hex($r)}#{dec-to-hex($g)}#{dec-to-hex($b)}");
 }
 
-$bg-color: color.scale(c.$color, $lightness: +95%, $saturation: -30%);
-$bg-alt-color: color.scale(c.$color, $lightness: +70%, $saturation: -70%);
-$bg-selected-color: color.scale(c.$color, $lightness: +20%, $saturation: -30%);
+$bg-color: color.scale(c.$color, $lightness: +95%, $saturation: -20%);
+$bg-alt-color: color.scale(c.$color, $lightness: +70%, $saturation: -60%);
+$bg-selected-color: color.scale(c.$color, $lightness: +20%, $saturation: -20%);
 
 $fg-color: color.scale(c.$color, $lightness: -99%);
 $fg-alt-color: c.$color;

@@ -412,17 +412,17 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
     Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+A hotkey-overlay-title="Open file manager" { spawn "nautilus"; }
+    Mod+A hotkey-overlay-title="Open file manager" { spawn "thunar"; }
     Mod+C hotkey-overlay-title="Run code" { spawn "code"; }
     Mod+B hotkey-overlay-title="Run browser" { spawn "firefox"; }
-    Mod+P hotkey-overlay-title="Run hyprpicker" { spawn "hyprpicker"; }
+    Mod+P hotkey-overlay-title="Run hyprpicker" { spawn-sh "hyprpicker | wl-copy"; }
 
     Mod+Space hotkey-overlay-title="Run rofi drun" { spawn-sh "bash ~/.config/rofi/start-drun.sh"; }
     Mod+Escape hotkey-overlay-title="Run system monitor" { spawn "gnome-system-monitor"; }
     Mod+Shift+W hotkey-overlay-title="ags restart" {spawn-sh "bash ~/.config/waybar/startwaybar.sh"; }
     Mod+M hotkey-overlay-title="Run rofi power menu" { spawn-sh "bash ~/.config/rofi/powermenu/run-power-menu.sh"; }
     Mod+V hotkey-overlay-title="Run rofi clipboard menu" { spawn-sh "bash ~/.config/rofi/clipmenu/start-clipmenu.sh"; }
-    Mod+Shift+T hotkey-overlay-title="Run rofi theme menu" { spawn-sh "bash ~/.config/rofi/switch-themes/run.sh"; }
+    Mod+S hotkey-overlay-title="Run rofi theme menu" { spawn-sh "bash ~/.config/rofi/switch-themes/run.sh"; }
     Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
     Mod+Shift+B hotkey-overlay-title="Restart wallpaper timer" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
 
