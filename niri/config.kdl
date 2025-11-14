@@ -415,7 +415,7 @@ binds {
     Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+A hotkey-overlay-title="Open file manager" { spawn "thunar"; }
     Mod+C hotkey-overlay-title="Run code" { spawn "code"; }
-    Mod+B hotkey-overlay-title="Run browser" { spawn "firefox"; }
+    Mod+B hotkey-overlay-title="Run browser" { spawn "zen-browser"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn-sh "hyprpicker | wl-copy"; }
 
     Mod+Space hotkey-overlay-title="Run rofi drun" { spawn-sh "bash ~/.config/rofi/start-drun.sh"; }
