@@ -320,25 +320,26 @@ layer-rule {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-spawn-sh-at-startup "flatpak run com.discordapp.Discord --start-minimized"
-spawn-sh-at-startup "flatpak run org.signal.Signal"
-spawn-sh-at-startup "flatpak run org.telegram.desktop -startintray"
-spawn-sh-at-startup "sway-audio-idle-inhibit"
 spawn-at-startup "~/.bash_profile"
-spawn-at-startup "kdeconnect-indicator"
+spawn-sh-at-startup "sway-audio-idle-inhibit"
 spawn-sh-at-startup "bash ~/.config/waybar/startwaybar.sh"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store # Stores only text data"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store # Stores only image data"
-spawn-at-startup "heroic"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "swayosd-libinput-backend"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
 spawn-sh-at-startup "bash ~/.config/brightness/restore-brightness.sh"
-spawn-sh-at-startup "swayidle -w timeout 300 'brightnessctl -s set 10%' resume 'brightnessctl -r' timeout 480 'systemctl suspend' lock 'hyprlock' before-sleep 'hyprlock'"
-spawn-sh-at-startup "rm /run/user/1000/pipectl.1000.wl-present.pipe"
+spawn-sh-at-startup "swayidle -w timeout 300 'brightnessctl -s set 10%' resume 'brightnessctl -r' timeout 420 'hyprlock' timeout 600 'systemctl suspend' lock 'hyprlock' before-sleep 'hyprlock'"
+spawn-sh-at-startup "rm -f /run/user/1000/pipectl.1000.wl-present.pipe"
 spawn-sh-at-startup "sleep 2 && kanshi"
+spawn-at-startup "kdeconnect-indicator"
+spawn-sh-at-startup "~/Documents/jetbrains-toolbox-2.9.0.56191/bin/jetbrains-toolbox"
+spawn-sh-at-startup "flatpak run com.discordapp.Discord --start-minimized"
+spawn-sh-at-startup "flatpak run org.signal.Signal"
+spawn-sh-at-startup "flatpak run org.telegram.desktop -startintray"
+spawn-at-startup "heroic"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
