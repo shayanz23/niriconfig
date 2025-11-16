@@ -331,7 +331,7 @@ spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
 spawn-sh-at-startup "bash ~/.config/brightness/restore-brightness.sh"
-spawn-sh-at-startup "swayidle -w timeout 300 'brightnessctl -s set 10%' resume 'brightnessctl -r' timeout 420 'hyprlock' timeout 600 'systemctl suspend' lock 'hyprlock' before-sleep 'hyprlock'"
+spawn-sh-at-startup "~/.config/swayidle/start-swayidle.sh"
 spawn-sh-at-startup "rm -f /run/user/1000/pipectl.1000.wl-present.pipe"
 spawn-sh-at-startup "sleep 2 && kanshi"
 spawn-at-startup "kdeconnect-indicator"
@@ -424,6 +424,7 @@ binds {
     Mod+M hotkey-overlay-title="Run rofi power menu" { spawn-sh "bash ~/.config/rofi/powermenu/run-power-menu.sh"; }
     Mod+V hotkey-overlay-title="Run rofi clipboard menu" { spawn-sh "bash ~/.config/rofi/clipmenu/start-clipmenu.sh"; }
     Mod+S hotkey-overlay-title="Run rofi theme menu" { spawn-sh "bash ~/.config/rofi/switch-themes/run.sh"; }
+    Mod+Shift+S hotkey-overlay-title="Restart swayidle" { spawn-sh "bash ~/.config/swayidle/start-swayidle.sh"; }
     Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
     Mod+Shift+B hotkey-overlay-title="Restart wallpaper timer" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
 
