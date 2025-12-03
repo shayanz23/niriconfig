@@ -22,7 +22,7 @@ else if [ "$piped_data" = "blue" ]
     pkexec papirus-folders -C $piped_data
 else if [ "$piped_data" = "cyan" ]
     cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
-    gsettings set org.gnome.desktop.interface accent-color $piped_data
+    gsettings set org.gnome.desktop.interface accent-color teal
     pkexec papirus-folders -C $piped_data
 else if [ "$piped_data" = "yellow" ]
     cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss

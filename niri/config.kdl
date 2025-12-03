@@ -339,6 +339,8 @@ spawn-sh-at-startup "~/Documents/jetbrains-toolbox-2.9.0.56191/bin/jetbrains-too
 spawn-sh-at-startup "flatpak run com.discordapp.Discord --start-minimized"
 spawn-sh-at-startup "flatpak run org.signal.Signal"
 spawn-sh-at-startup "flatpak run org.telegram.desktop -startintray"
+spawn-sh-at-startup "flatpak run com.mattermost.Desktop"
+spawn-sh-at-startup "steam -silent"
 spawn-at-startup "heroic"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
