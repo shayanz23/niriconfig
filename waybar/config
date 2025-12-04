@@ -10,10 +10,11 @@
         "network",
         "bluetooth",
         "custom/cmenu",
-        "battery"
+        "battery",
+        "clock"
     ],
     "modules-center": [
-        "clock"
+        "niri/window"
     ],
     "modules-left": [
         "custom/drun",
@@ -23,7 +24,6 @@
     ],
     "clock": {
         "format": "{:%B %d, %Y %H:%M}",
-        "format-alt": "{:%A, %B %d, %Y (%R)}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
             "mode": "month",
@@ -40,8 +40,7 @@
         },
         "actions": {
             "on-click-right": "mode",
-            "on-scroll-up": "tz_up",
-            "on-scroll-down": "tz_down"
+            "on-click-left": "mode"
         }
     },
     "bluetooth": {
@@ -85,7 +84,7 @@
     },
     "niri/window": {
         "format": "{}",
-        "max-length": 25,
+        "max-length": 100,
         "rewrite": {
             "(.*) — Mozilla Firefox": "$1",
             "(.*) - fish": "> [$1]"

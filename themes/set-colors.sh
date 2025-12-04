@@ -38,4 +38,5 @@ else
 end
 
 sass ~/.config/rofi/config.scss ~/.config/rofi/config.rasi
+sass ~/.config/wofi/style.scss ~/.config/wofi/style.css
 nohup bash ~/.config/waybar/startwaybar.sh &

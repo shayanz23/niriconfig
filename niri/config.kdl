@@ -302,6 +302,26 @@ window-rule {
     clip-to-geometry true
 }
 
+window-rule {
+    match app-id="qalculate-gtk"
+    open-floating true
+    default-window-height { proportion 0.4; }
+    default-column-width { proportion 0.3; }
+}
+
+window-rule {
+    match app-id="Discord"
+    match title=r"(?i)t3 chat"
+    match title=r"(?i)chat"
+    match title=r"(?i)gpt"
+    match title=r"(?i)deepseek"
+    match title=r"(?i)gmail"
+    match title=r"(?i)config.kdl"
+    match title=r"(?i)bitwarden"
+    match title=r"(?i)password manager"
+    block-out-from "screencast"
+}
+
 layer-rule {
     match namespace="swww"
     place-within-backdrop true
@@ -420,14 +440,15 @@ binds {
     Mod+B hotkey-overlay-title="Run browser" { spawn "zen-browser"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn-sh "hyprpicker | wl-copy"; }
 
-    Mod+Space hotkey-overlay-title="Run rofi drun" { spawn-sh "bash ~/.config/rofi/start-drun.sh"; }
+    Mod+Space hotkey-overlay-title="Run wofi drun" { spawn-sh "bash ~/.config/wofi/start-drun.sh"; }
     Mod+Escape hotkey-overlay-title="Run system monitor" { spawn "gnome-system-monitor"; }
     Mod+Shift+W hotkey-overlay-title="ags restart" {spawn-sh "bash ~/.config/waybar/startwaybar.sh"; }
-    Mod+M hotkey-overlay-title="Run rofi power menu" { spawn-sh "bash ~/.config/rofi/powermenu/run-power-menu.sh"; }
-    Mod+V hotkey-overlay-title="Run rofi clipboard menu" { spawn-sh "bash ~/.config/rofi/clipmenu/start-clipmenu.sh"; }
-    Mod+S hotkey-overlay-title="Run rofi theme menu" { spawn-sh "bash ~/.config/rofi/switch-themes/run.sh"; }
+    Mod+M hotkey-overlay-title="Run wofi power menu" { spawn-sh "bash ~/.config/wofi/powermenu/run-power-menu.sh"; }
+    Mod+V hotkey-overlay-title="Run wofi clipboard menu" { spawn-sh "bash ~/.config/wofi/clipmenu/start-clipmenu.sh"; }
+    Mod+S hotkey-overlay-title="Run wofi theme menu" { spawn-sh "bash ~/.config/wofi/switch-themes/run.sh"; }
     Mod+Shift+S hotkey-overlay-title="Restart swayidle" { spawn-sh "bash ~/.config/swayidle/start-swayidle.sh"; }
-    Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
+    // Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
+    Mod+X hotkey-overlay-title="Run qalculate" { spawn-sh "bash ~/.config/calculator/start-qalculate.sh"; }
     Mod+Shift+B hotkey-overlay-title="Restart wallpaper timer" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
