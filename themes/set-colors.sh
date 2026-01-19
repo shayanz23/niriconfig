@@ -4,34 +4,41 @@ read -l piped_data
 echo $piped_data
 
 if [ "$piped_data" = "purple" ]
-    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
-    gsettings set org.gnome.desktop.interface accent-color $piped_data
     pkexec papirus-folders -C violet
-else if [ "$piped_data" = "green" ]
     cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
     gsettings set org.gnome.desktop.interface accent-color $piped_data
+else if [ "$piped_data" = "green" ]
     pkexec papirus-folders -C $piped_data
+    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
+    gsettings set org.gnome.desktop.interface accent-color $piped_data
     ./set-folders.sh green
 else if [ "$piped_data" = "red" ]
-    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
-    gsettings set org.gnome.desktop.interface accent-color $piped_data
     pkexec papirus-folders -C $piped_data
+    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
+    gsettings set org.gnome.desktop.interface accent-color $piped_data
 else if [ "$piped_data" = "blue" ]
-    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
-    gsettings set org.gnome.desktop.interface accent-color $piped_data
     pkexec papirus-folders -C $piped_data
+    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
+    gsettings set org.gnome.desktop.interface accent-color $piped_data
 else if [ "$piped_data" = "cyan" ]
+    pkexec papirus-folders -C $piped_data
     cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
     gsettings set org.gnome.desktop.interface accent-color teal
-    pkexec papirus-folders -C $piped_data
 else if [ "$piped_data" = "yellow" ]
-    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
-    gsettings set org.gnome.desktop.interface accent-color $piped_data
     pkexec papirus-folders -C $piped_data
+    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
+    gsettings set org.gnome.desktop.interface accent-color $piped_data
 else if [ "$piped_data" = "orange" ]
-    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
-    gsettings set org.gnome.desktop.interface accent-color $piped_data
     pkexec papirus-folders -C $piped_data
+    cp -f ~/.config/themes/colors/$piped_data/color.scss ~/.config/themes/color.scss
+    cp -f ~/.config/themes/colors/$piped_data/color.kdl ~/.config/niri/color.kdl
+    gsettings set org.gnome.desktop.interface accent-color $piped_data
 else
     echo "invalid option."
     exit 1

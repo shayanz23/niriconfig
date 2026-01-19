@@ -7,6 +7,7 @@
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
+include "color.kdl"
 
 output "eDP-1" {
     // off
@@ -325,21 +326,16 @@ window-rule {
 }
 
 
-// layer-rule {
-//     match namespace="workspace"
-//     place-within-backdrop false
-//     opacity 1.0
-// }
-
-// layer-rule {
-//     match namespace="workspaces"
-//     place-within-backdrop true
-//     opacity 1.0
-// }
+layer-rule {
+    match namespace="workspace"
+    place-within-backdrop false
+    opacity 1.0
+}
 
 layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
+    match namespace="workspaces"
+    place-within-backdrop true
+    opacity 1.0
 }
 
 // Add lines like this to spawn processes at startup.
@@ -349,15 +345,15 @@ layer-rule {
 
 spawn-at-startup "~/.bash_profile"
 spawn-sh-at-startup "sway-audio-idle-inhibit"
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-sh-at-startup "bash ~/.config/quickshell/start.sh"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store # Stores only text data"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store # Stores only image data"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "swayosd-libinput-backend"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
-// spawn-sh-at-startup "swww-daemon -n workspaces"
-// spawn-sh-at-startup "swww-daemon -n workspace"
-// spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
+spawn-sh-at-startup "swww-daemon -n workspaces"
+spawn-sh-at-startup "swww-daemon -n workspace"
+spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
 spawn-sh-at-startup "bash ~/.config/brightness/restore-brightness.sh"
 spawn-sh-at-startup "~/.config/swayidle/start-swayidle.sh"
 spawn-sh-at-startup "rm -f /run/user/1000/pipectl.1000.wl-present.pipe"
@@ -369,6 +365,8 @@ spawn-sh-at-startup "flatpak run org.telegram.desktop -startintray"
 spawn-sh-at-startup "flatpak run com.mattermost.Desktop"
 spawn-sh-at-startup "steam -silent"
 spawn-at-startup "heroic"
+spawn-at-startup "caffeine"
+
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
@@ -439,30 +437,23 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+L hotkey-overlay-title="Lock the Screen: noctalia" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
+    Mod+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+A hotkey-overlay-title="Open file manager" { spawn "thunar"; }
     Mod+C hotkey-overlay-title="Run code" { spawn "code"; }
     Mod+B hotkey-overlay-title="Run browser" { spawn "zen-browser"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn-sh "hyprpicker | wl-copy"; }
 
+    Mod+Space hotkey-overlay-title="Run wofi drun" { spawn-sh "bash ~/.config/wofi/start-drun.sh"; }
     Mod+Escape hotkey-overlay-title="Run system monitor" { spawn "gnome-system-monitor"; }
-    // Mod+M hotkey-overlay-title="Run wofi power menu" { spawn-sh "bash ~/.config/wofi/powermenu/run-power-menu.sh"; }
-    // Mod+V hotkey-overlay-title="Run wofi clipboard menu" { spawn-sh "bash ~/.config/wofi/clipmenu/start-clipmenu.sh"; }
-    // Mod+S hotkey-overlay-title="Run wofi theme menu" { spawn-sh "bash ~/.config/wofi/switch-themes/run.sh"; }
-    // Mod+Space hotkey-overlay-title="Run wofi drun" { spawn-sh "bash ~/.config/wofi/start-drun.sh"; }
+    Mod+Shift+W hotkey-overlay-title="qs restart" {spawn-sh "bash ~/.config/quickshell/start.sh"; }
+    Mod+M hotkey-overlay-title="Run wofi power menu" { spawn-sh "bash ~/.config/wofi/powermenu/run-power-menu.sh"; }
+    Mod+V hotkey-overlay-title="Run wofi clipboard menu" { spawn-sh "bash ~/.config/wofi/clipmenu/start-clipmenu.sh"; }
+    Mod+S hotkey-overlay-title="Run wofi theme menu" { spawn-sh "bash ~/.config/wofi/switch-themes/run.sh"; }
     Mod+Shift+S hotkey-overlay-title="Restart swayidle" { spawn-sh "bash ~/.config/swayidle/start-swayidle.sh"; }
     // Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
-    // Mod+X hotkey-overlay-title="Run qalculate" { spawn-sh "bash ~/.config/calculator/start-qalculate.sh"; }
-    // Mod+Shift+B hotkey-overlay-title="change background" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
-
-    Mod+Shift+B hotkey-overlay-title="change background" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
-    Mod+M hotkey-overlay-title="Run noctalia power menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
-    Mod+V hotkey-overlay-title="Run noctalia clipboard menu" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
-    Mod+S hotkey-overlay-title="Run noctalia control panel" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
-    Mod+Space hotkey-overlay-title="Run noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Mod+X hotkey-overlay-title="Run emoji picker" { spawn-sh "qs -c noctalia-shell ipc call launcher emoji"; }
-    Mod+I hotkey-overlay-title="Run noctalia Idle inhibitor" { spawn-sh "qs -c noctalia-shell ipc call idleInhibitor toggle"; }
+    Mod+X hotkey-overlay-title="Run qalculate" { spawn-sh "bash ~/.config/calculator/start-qalculate.sh"; }
+    Mod+Shift+B hotkey-overlay-title="Restart wallpaper timer" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -475,18 +466,13 @@ binds {
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
-    // XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "swayosd-client --output-volume 5"; }
-    // XF86AudioLowerVolume allow-when-locked=true { spawn-sh "swayosd-client --output-volume -5"; } 
-    // XF86AudioMute        allow-when-locked=true { spawn-sh "swayosd-client --output-volume mute-toggle"; }
-    // XF86AudioMicMute     allow-when-locked=true { spawn-sh "swayosd-client --input-volume mute-toggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "swayosd-client --output-volume 5"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "swayosd-client --output-volume -5"; } 
+    XF86AudioMute        allow-when-locked=true { spawn-sh "swayosd-client --output-volume mute-toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "swayosd-client --input-volume mute-toggle"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; } 
-    XF86AudioMute        allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
-    // XF86AudioMicMute     allow-when-locked=true { spawn-sh "swayosd-client --input-volume mute-toggle"; }
-
-    XF86MonBrightnessUp     allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness increase"; }
-    XF86MonBrightnessDown   allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
+    XF86MonBrightnessUp     allow-when-locked=true { spawn-sh " bash ~/.config/brightness/change-brightness.sh +5"; }
+    XF86MonBrightnessDown   allow-when-locked=true { spawn-sh "bash ~/.config/brightness/change-brightness.sh -5"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -553,8 +539,8 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    // Mod+U              { focus-workspace-down; }
-    // Mod+I              { focus-workspace-up; }
+    Mod+U              { focus-workspace-down; }
+    Mod+I              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
@@ -714,4 +700,3 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
-include "./noctalia.kdl"
