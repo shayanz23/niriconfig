@@ -349,7 +349,7 @@ layer-rule {
 
 spawn-at-startup "~/.bash_profile"
 spawn-sh-at-startup "sway-audio-idle-inhibit"
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-sh-at-startup "bash -c ~/.config/noctalia/start-noctalia.sh"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store # Stores only text data"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store # Stores only image data"
 spawn-at-startup "swayosd-server"
@@ -456,6 +456,7 @@ binds {
     // Mod+X hotkey-overlay-title="Run qalculate" { spawn-sh "bash ~/.config/calculator/start-qalculate.sh"; }
     // Mod+Shift+B hotkey-overlay-title="change background" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
 
+    Mod+N hotkey-overlay-title="Restart noctalia" { spawn-sh "bash -c ~/.config/noctalia/start-noctalia.sh"; }
     Mod+Shift+B hotkey-overlay-title="change background" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
     Mod+M hotkey-overlay-title="Run noctalia power menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
     Mod+V hotkey-overlay-title="Run noctalia clipboard menu" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
