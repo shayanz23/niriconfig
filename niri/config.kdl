@@ -420,7 +420,7 @@ animations {
 // (This example rule is commented out with a "/-" in front.)
 
 switch-events {
-    lid-close { spawn "systemctl sleep"; }
+    lid-close { spawn "systemctl" "sleep"; }
 }
 
 binds {

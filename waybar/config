@@ -84,7 +84,7 @@
     },
     "niri/window": {
         "format": "{}",
-        "max-length": 100,
+        "max-length": 50,
         "rewrite": {
             "(.*) — Mozilla Firefox": "$1",
             "(.*) - fish": "> [$1]"
