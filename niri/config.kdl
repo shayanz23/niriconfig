@@ -359,7 +359,7 @@ spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 // spawn-sh-at-startup "swww-daemon -n workspace"
 // spawn-sh-at-startup "sleep 2 && ~/.config/swww/wallpaper-timer.sh"
 spawn-sh-at-startup "bash ~/.config/brightness/restore-brightness.sh"
-spawn-sh-at-startup "~/.config/swayidle/start-swayidle.sh"
+// spawn-sh-at-startup "~/.config/swayidle/start-swayidle.sh"
 spawn-sh-at-startup "rm -f /run/user/1000/pipectl.1000.wl-present.pipe"
 spawn-sh-at-startup "sleep 2 && kanshi"
 spawn-at-startup "kdeconnect-indicator"
@@ -451,7 +451,7 @@ binds {
     // Mod+V hotkey-overlay-title="Run wofi clipboard menu" { spawn-sh "bash ~/.config/wofi/clipmenu/start-clipmenu.sh"; }
     // Mod+S hotkey-overlay-title="Run wofi theme menu" { spawn-sh "bash ~/.config/wofi/switch-themes/run.sh"; }
     // Mod+Space hotkey-overlay-title="Run wofi drun" { spawn-sh "bash ~/.config/wofi/start-drun.sh"; }
-    Mod+Shift+S hotkey-overlay-title="Restart swayidle" { spawn-sh "bash ~/.config/swayidle/start-swayidle.sh"; }
+    // Mod+Shift+S hotkey-overlay-title="Restart swayidle" { spawn-sh "bash ~/.config/swayidle/start-swayidle.sh"; }
     // Mod+X hotkey-overlay-title="Run calc menu" { spawn-sh "bash ~/.config/rofi/calculator/start-calcmenu.sh"; }
     // Mod+X hotkey-overlay-title="Run qalculate" { spawn-sh "bash ~/.config/calculator/start-qalculate.sh"; }
     // Mod+Shift+B hotkey-overlay-title="change background" { spawn-sh "bash ~/.config/swww/restart-timer.sh"; }
