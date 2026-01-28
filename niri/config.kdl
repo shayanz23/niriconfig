@@ -352,8 +352,8 @@ spawn-sh-at-startup "sway-audio-idle-inhibit"
 spawn-sh-at-startup "bash -c ~/.config/noctalia/start-noctalia.sh"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store # Stores only text data"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store # Stores only image data"
-spawn-at-startup "swayosd-server"
-spawn-at-startup "swayosd-libinput-backend"
+// spawn-at-startup "swayosd-server"
+// spawn-at-startup "swayosd-libinput-backend"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 // spawn-sh-at-startup "swww-daemon -n workspaces"
 // spawn-sh-at-startup "swww-daemon -n workspace"
@@ -441,7 +441,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+L hotkey-overlay-title="Lock the Screen: noctalia" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    Mod+A hotkey-overlay-title="Open file manager" { spawn "thunar"; }
+    Mod+A hotkey-overlay-title="Open file manager" { spawn "nautilus"; }
     Mod+C hotkey-overlay-title="Run code" { spawn "code"; }
     Mod+B hotkey-overlay-title="Run browser" { spawn "zen-browser"; }
     Mod+P hotkey-overlay-title="Run hyprpicker" { spawn-sh "hyprpicker | wl-copy"; }

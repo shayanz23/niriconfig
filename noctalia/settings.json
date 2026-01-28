@@ -160,7 +160,7 @@
     },
     "brightness": {
         "brightnessStep": 5,
-        "enableDdcSupport": false,
+        "enableDdcSupport": true,
         "enforceMinimum": true
     },
     "calendar": {
@@ -184,7 +184,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "matugenSchemeType": "scheme-fruit-salad",
-        "predefinedScheme": "Eldritch",
+        "predefinedScheme": "Normie",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -320,7 +320,7 @@
         "bluetoothRssiPollIntervalMs": 10000,
         "bluetoothRssiPollingEnabled": false,
         "wifiDetailsViewMode": "grid",
-        "wifiEnabled": true
+        "wifiEnabled": false
     },
     "nightLight": {
         "autoSchedule": true,
@@ -447,26 +447,6 @@
     },
     "templates": {
         "activeTemplates": [
-            {
-                "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
-                "id": "kitty"
-            },
-            {
-                "enabled": true,
-                "id": "niri"
-            },
-            {
-                "enabled": true,
-                "id": "zenBrowser"
-            },
-            {
-                "enabled": true,
-                "id": "telegram"
-            }
         ],
         "enableUserTemplates": false
     },
@@ -486,7 +466,7 @@
         "wifiDetailsViewMode": "grid"
     },
     "wallpaper": {
-        "directory": "/home/frame/Pictures/backgrounds",
+        "directory": "/home/theseus/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "fillColor": "#000000",
