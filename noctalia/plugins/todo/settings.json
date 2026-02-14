@@ -6,18 +6,8 @@
     }
   ],
   "current_page_id": 0,
-  "todos": [
-    {
-      "id": 1770781061784,
-      "text": "ssdfds",
-      "completed": false,
-      "createdAt": "2026-02-11T03:37:41.784Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    }
-  ],
-  "count": 1,
+  "todos": [],
+  "count": 0,
   "completedCount": 0,
   "isExpanded": false,
   "useCustomColors": false,
