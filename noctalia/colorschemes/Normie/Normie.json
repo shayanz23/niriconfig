@@ -12,9 +12,9 @@
         "mOnSurface": "#fcfcfc",
         "mHover": "#1a1a1a",
         "mOnHover": "#fcfcfc",
-        "mSurfaceVariant": "#1d1d1d",
+        "mSurfaceVariant": "#1a1a1a",
         "mOnSurfaceVariant": "#fcfcfc",
-        "mOutline": "#1d1d1d",
+        "mOutline": "#1a0e21",
         "mShadow": "#0f0f08",
         "terminal": {
             "background": "#272822",
